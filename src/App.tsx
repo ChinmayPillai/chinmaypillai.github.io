@@ -51,7 +51,7 @@ function App() {
         </p>
       </div>
       <img
-        src="../DP.jpg"
+        src="/DP.jpg"
         className="rounded float-end"
         alt="Couldn't Load Image :("
         style={{ width: "44%" }}
