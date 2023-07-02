@@ -2,6 +2,18 @@ import { Outlet } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Item, NavItem } from "./Item";
 
+const Home: Item = {
+  name: "Home",
+  link: "/#",
+  internal: true,
+};
+
+const Experience: Item = {
+  name: "Experience",
+  link: "/exp#",
+  internal: true,
+};
+
 const LinkedIn: Item = {
   name: "LinkedIn",
   link: "https://www.linkedin.com/in/chinmay-pillai/",
@@ -40,7 +52,7 @@ const Socials: Item[] = [
 
 const Resume: Item = {
   name: "Resume",
-  link: "https://drive.google.com/file/d/1uBAiOoTCuEf-TIRLaVW4Zbc8pgJgmEHP/view?usp=drive_link",
+  link: "https://drive.google.com/file/d/1U7e5V5oUhajBXn1k45he0e7jPuybtEG8/view?usp=sharing",
 };
 
 function NavBar() {
@@ -52,7 +64,7 @@ function NavBar() {
       >
         {/*<nav className="navbar bg-primary navbar-expand-lg bg-body-tertiary">*/}
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/#">
             CP
           </a>
           <button
@@ -68,11 +80,13 @@ function NavBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+              {/*<li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/#">
                   Home
                 </a>
-              </li>
+              </li>*/}
+              <NavItem item={Home} />
+              <NavItem item={Experience} />
               <NavItem item={LinkedIn} />
               <NavItem item={Github} />
               <NavItem item={Resume} />
