@@ -43,6 +43,10 @@ const Emails: Item[] = [
 
 const Socials: Item[] = [
   {
+  name: "Twitter",
+  link: "https://twitter.com/ChinmayPillai",
+  },
+  {
     name: "Instagram",
     link: "https://instagram.com/chinmay_sk8?igshid=ZDdkNTZiNTM=",
   },
