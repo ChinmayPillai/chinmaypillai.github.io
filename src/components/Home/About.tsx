@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="badge text-wrap" style={{ width: "55%" }}>
+    <div className="badge text-wrap">
       <h1 className="display-1">About Me</h1>
       <p className="text-start lead text-white-50 fs-5 fw-normal lh-base">
         I am an IIT Kanpur student pursuing a Double Major in Physics and
