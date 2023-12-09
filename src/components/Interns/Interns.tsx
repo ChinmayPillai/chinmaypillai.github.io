@@ -1,7 +1,7 @@
 function Interns() {
   return (
     <div>
-      <h1 className="display-1 text-center text-white"> Experience</h1>
+      <h1 className="display-1 text-center text-white"> Internships</h1>
 
       <ul className="list-group list-group-horizontal">
         <li className="list-group-item">
