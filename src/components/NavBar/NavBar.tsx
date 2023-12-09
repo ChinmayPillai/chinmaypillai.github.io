@@ -9,8 +9,14 @@ const Home: Item = {
 };
 
 const Experience: Item = {
-  name: "Experience",
-  link: "/exp#",
+  name: "Internships",
+  link: "/interns#",
+  internal: true,
+};
+
+const Projects: Item = {
+  name: "Projects",
+  link: "/projects#",
   internal: true,
 };
 
@@ -87,6 +93,7 @@ function NavBar() {
               </li>*/}
               <NavItem item={Home} />
               <NavItem item={Experience} />
+              <NavItem item={Projects} />
               <NavItem item={LinkedIn} />
               <NavItem item={Github} />
               <NavItem item={Resume} />

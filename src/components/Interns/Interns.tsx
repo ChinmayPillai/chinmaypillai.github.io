@@ -1,4 +1,4 @@
-function Experience() {
+function Interns() {
   return (
     <div>
       <h1 className="display-1 text-center text-white"> Experience</h1>
@@ -197,4 +197,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Interns;
