@@ -3,37 +3,41 @@ import ProjectCard, { Project } from "../Utilities/ProjectCard";
 
 const Projects: Project[] = [
   {
-    title: "Summer Intern, Samsung Banglore (Upcoming)",
-    des: "Upcoming Summer Intern for Samsung Research Institute, Banglore",
-    date: "May-July 2024"
+    title: "SDE Summer Intern, Samsung Banglore",
+    des: "Upcoming Summer SDE Intern for Samsung Research Institute, Banglore",
+    date: "May-July 2024",
+    img: "/Samsung.jpg"
   },
   {
-    title: "Summer Intern, ACL Digital",
+    title: "SDE Summer Intern, ACL Digital",
     des: "Summer Inter at ACL Digital",
-    date: "May-July 2023"
+    date: "May-July 2023",
+    img: "/ACL.jpg"
   },
   {
-    title: "Computation Research Intern | Prof. Nisanth Nair, IIT Kanpur",
+    title: "Computation Research Intern, IITK",
     des: "Computation Research Intern under Prof. Nisanth Nair",
-    date: "May 2022 - May 2023"
+    date: "May 2022 - May 2023",
+    img: "/IITK.jpg"
   },
   {
-    title: "Winter Intern, Quazar Technologies",
+    title: "SDE Winter Intern, Quazar Technologies",
     des: "Winter Intern for Quazar Technologies",
-    date: "Oct-Dec 2022"
+    date: "Oct-Dec 2022",
+    img: "/Quazar.jpg"
   },
 ]
 
 function Interns() {
   return (
     <Container>
-      <Grid container>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1 className="display-1 text-center text-white"> Internships</h1>
         </Grid>
         
         {Projects.map((project) => (
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
               <ProjectCard project={project} />
           </Grid>
         ))}

@@ -22,16 +22,18 @@ interface Props {
 
 export default function ProjectCard({project}: Props){
     return (
-        <Card>
+        <Card >
+            <CardMedia
+                component="img"
+                height = "100%"
+                image={project.img}
+                alt={project.title}
+            />
+
+            
             <CardHeader 
                 title={project.title}
                 subheader={project.date}
-            />
-            <CardMedia
-                component="img"
-                height="194"
-                image={project.img}
-                alt={project.title}
             />
 
             <CardContent>
