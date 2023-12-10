@@ -5,14 +5,15 @@ import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import { createTheme, ThemeProvider } from '@mui/material';
 
-export type Project = {
+export type Intern = {
     title: string;
     des: string;
     date: string;
+    img?: string;
 };
   
 interface Props {
-    project: Project;
+    project: Intern;
 }
 
 const theme = createTheme({
@@ -23,11 +24,18 @@ const theme = createTheme({
       },
 })
 
-export default function ProjectCard({project}: Props){
+export default function InternCard({project}: Props){
     return (
         <ThemeProvider theme={theme}>
             <Card >
-                                
+                <CardMedia
+                    component="img"
+                    height = "100%"
+                    image={project.img}
+                    alt={project.title}
+                />
+
+                
                 <CardHeader 
                     title={project.title}
                     subheader={project.date}

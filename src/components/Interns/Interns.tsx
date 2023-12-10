@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
-import ProjectCard, { Project } from "../Utilities/ProjectCard";
+import InternCard, { Intern } from "../Utilities/InternCard";
 
-const Projects: Project[] = [
+const InternList: Intern[] = [
   {
     title: "SDE Summer Intern, Samsung Banglore",
     des: "Upcoming Summer SDE Intern for SRI, Banglore",
@@ -38,9 +38,9 @@ function Interns() {
               </Typography>
           </Grid>
 
-          {Projects.map((project) => (
+          {InternList.map((intern) => (
             <Grid item xs={12} sm={6} md={3}>
-                <ProjectCard project={project} />
+                <InternCard project={intern} />
             </Grid>
         ))}
       </Grid>
