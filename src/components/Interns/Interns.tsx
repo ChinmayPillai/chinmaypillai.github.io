@@ -22,7 +22,7 @@ const InternList: Intern[] = [
   },
   {
     title: "SDE Winter Intern, Quazar Technologies",
-    des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    des: "Worked on C++ Drivers, N-Body Force Simulator, Video Processing",
     date: "Oct-Dec 2022",
     img: "/Quazar.jpg"
   },
