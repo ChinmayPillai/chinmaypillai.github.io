@@ -31,9 +31,9 @@ const InternList: Intern[] = [
 function Interns() {
   return (
     <Container>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ m: 4 }}>
           <Grid item xs={12}>
-              <Typography variant="h1" align="center" color="white" sx={{ m: 4 }}>
+              <Typography variant="h1" align="center" color="white" sx={{ mb: 4 }}>
                 Internships
               </Typography>
           </Grid>
