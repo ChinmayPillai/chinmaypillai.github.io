@@ -3,24 +3,49 @@ import ProjectCard, { Project } from "../Utilities/ProjectCard";
 
 const ProjectList: Project[] = [
   {
-    title: "SDE Summer Intern, Samsung Banglore",
-    des: "Upcoming Summer SDE Intern for SRI, Banglore",
-    date: "May-July 2024",
+    title: "Speech Detection ML Model",
+    //des: "Upcoming Summer SDE Intern for SRI, Banglore",
+    date: "Oct-Nov 2023",
   },
   {
-    title: "SDE Summer Intern, ACL Digital",
-    des: "Worked on IoT, MERN Stack, Computer Networks",
+    title: "Music Stroke Detection & Clustering ML Model",
+    //des: "Worked on IoT, MERN Stack, Computer Networks",
+    date: "Oct-Nov 2023",
+  },
+  {
+    title: "MERN E-Commerce Web Application",
+    //des: "Worked on Neural Networks using PyTorch",
     date: "May-July 2023",
   },
   {
-    title: "Computational Research Intern, IITK",
-    des: "Worked on Neural Networks using PyTorch",
-    date: "May 2022 - May 2023",
+    title: "Multi-Particle Force Simulator",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "Oct-Nov 2022",
   },
   {
-    title: "SDE Winter Intern, Quazar Technologies",
-    des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
-    date: "Oct-Dec 2022",
+    title: "Singing Detection ML Model",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "Oct-Nov 2023",
+  },
+  {
+    title: "Raytracing",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "May-July 2023",
+  },
+  {
+    title: "Live Focussed Frame Finder",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "Dec 2022",
+  },
+  {
+    title: "Blockchain Voting Smart Contract",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "Mar 2023",
+  },
+  {
+    title: "BASH Image Processing",
+    //des: "Worked on C++ Drivers, N-Body Simulator, Video Processing",
+    date: "Dec 2022",
   },
 ]
 
@@ -30,7 +55,7 @@ function Projects() {
       <Grid container spacing={2}>
           <Grid item xs={12}>
               <Typography variant="h1" align="center" color="white" sx={{ m: 4 }}>
-                Internships
+                Projects
               </Typography>
           </Grid>
 
