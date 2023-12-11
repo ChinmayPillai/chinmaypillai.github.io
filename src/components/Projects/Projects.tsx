@@ -53,7 +53,7 @@ const ProjectList: Project[] = [
   },
   {
     title: "Blockchain Voting Smart Contract",
-    des: "Voting Smart Contract on Solana Blockchain using Solidity Blockcahin. IIT Kanpur Workshop",
+    des: "Voting Smart Contract for Decentralised Blockchain using Solidity. IIT Kanpur Workshop",
     date: "Mar 2023",
     link: "https://github.com/ChinmayPillai/Blockchain-Voting-Smart-Contract",
   },
