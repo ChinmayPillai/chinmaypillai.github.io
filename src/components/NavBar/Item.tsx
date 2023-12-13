@@ -11,10 +11,13 @@ interface Props {
 }
 
 export function NavItem({ item }: Props) {
+
+  const navItemStyle = {color: "#CAF0F8"};
+
   if (item.internal) {
     return (
       <li className="nav-item">
-        <Link className="nav-link" to={item.link}>
+        <Link className="nav-link" to={item.link} style={navItemStyle}>
           {item.name}
         </Link>
       </li>
@@ -22,7 +25,7 @@ export function NavItem({ item }: Props) {
   } else {
     return (
       <li className="nav-item">
-        <a className="nav-link" target="_blank" href={item.link}>
+        <a className="nav-link" target="_blank" href={item.link} style={navItemStyle}>
           {item.name}
         </a>
       </li>

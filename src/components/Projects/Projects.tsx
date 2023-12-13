@@ -66,11 +66,14 @@ const ProjectList: Project[] = [
 ]
 
 function Projects() {
+
+  const headingStyle = "#FEFCFB"
+
   return (
     <Container>
       <Grid container spacing={2} sx={{ m: 4 }}>
           <Grid item xs={12}>
-              <Typography variant="h1" align="center" color="white" sx={{ mb: 4 }}>
+              <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 4 }}>
                 Projects
               </Typography>
           </Grid>

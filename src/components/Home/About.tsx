@@ -1,15 +1,20 @@
 function About() {
+
+  const paragraphStyle = {
+    color: '#61a5c2',
+  };
+
   return (
     <div className="badge text-wrap">
       {/* <h1 className="display-1">About Me</h1> */}
-      <p className="text-start lead text-white-50 fs-5 fw-normal lh-base">
+      <p className="text-start lead fs-5 fw-normal lh-base" style={paragraphStyle}>
         I am an IIT Kanpur student pursuing a Double Major in Physics and
         Electrical Engineering and a Minor in Machine Learning. In addition to
         this, I'm a two-time National Bronze Medalist in Speed Skating.
       </p>
       <br />
       <br />
-      <p className="text-start text-white-50 fs-5 fw-normal lh-base">
+      <p className="text-start fs-5 fw-normal lh-base"  style={paragraphStyle}>
         I love to learn, improve myself and grow in all aspects that I can and
         I'm interested in. I actively use the internet to learn things foreign
         to me and improve upon those I already know a fair bit about. I explore
@@ -18,7 +23,7 @@ function About() {
       </p>
       <br />
       <br />
-      <p className="text-start text-white-50 fs-5 fw-normal lh-base">
+      <p className="text-start fs-5 fw-normal lh-base"  style={paragraphStyle}>
         I was the State Champion of Speed Skating in all of Andhra Pradesh in my
         11th and 12th grades and the State Champion in my age group during the
         9th and 10th grades. It's a sport that I loved to be a part of. The
@@ -31,7 +36,7 @@ function About() {
       </p>
       <br />
       <br />
-      <p className="text-start text-white-50 fs-5 fw-normal lh-base">
+      <p className="text-start fs-5 fw-normal lh-base" style={paragraphStyle}>
         I like solving puzzles and problem-solving. The fastest I've solved a
         Rubik's cube is within 18.9 sec. I have even taught several people how
         to solve the Rubik's cube. Teaching is quite enjoyable and extremely
@@ -40,7 +45,7 @@ function About() {
       </p>
       <br />
       <br />
-      <p className="text-start text-white-50 fs-5 fw-normal lh-base">
+      <p className="text-start fs-5 fw-normal lh-base"  style={paragraphStyle}>
         I look to grow as a person while expanding my knowledge, experience, and
         skill set, making a considerable impact during the process. The people
         who help me do that are ones who I'm tremendously grateful for.

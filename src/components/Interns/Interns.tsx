@@ -17,23 +17,26 @@ const InternList: Intern[] = [
   {
     title: "Computational Research Intern, IITK",
     des: "Worked on Neural Networks using PyTorch",
-    date: "May 2022 - May 2023",
+    date: "May 22 - May 23",
     img: "/IITK.jpg"
   },
   {
     title: "SDE Winter Intern, Quazar Technologies",
-    des: "Worked on C++ Drivers, N-Body Force Simulator, Video Processing",
+    des: "Worked on C++ Drivers, Gravity Simulator, Video Processing",
     date: "Oct-Dec 2022",
     img: "/Quazar.jpg"
   },
 ]
 
 function Interns() {
+
+  const headingStyle = "#FEFCFB"
+
   return (
     <Container>
       <Grid container spacing={2} sx={{ m: 4 }}>
           <Grid item xs={12}>
-              <Typography variant="h1" align="center" color="white" sx={{ mb: 4 }}>
+              <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 4 }}>
                 Internships
               </Typography>
           </Grid>

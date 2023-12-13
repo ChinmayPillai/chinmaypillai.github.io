@@ -66,11 +66,15 @@ const Resume: Item = {
 };
 
 function NavBar() {
+
+  const navStyle = { backgroundColor: "#0A1128" };
+
   return (
     <>
       <nav
-        className="navbar sticky-top bg-dark navbar-expand-lg"
+        className="navbar sticky-top navbar-expand-lg"
         data-bs-theme="dark"
+        style={navStyle}
       >
         {/*<nav className="navbar bg-primary navbar-expand-lg bg-body-tertiary">*/}
         <div className="container-fluid">

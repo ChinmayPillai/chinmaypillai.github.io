@@ -3,11 +3,14 @@ import DP from "./DP";
 import { Container, Grid, Typography } from "@mui/material";
 
 function Home() {
+
+  const headingStyle = "#FEFCFB"
+
   return (
     <Container>
       <Grid container>
         <Grid item xs={12}>
-          <Typography variant="h1" align="center" color="white">
+          <Typography variant="h1" align="center" color={headingStyle}>
             About Me
           </Typography>
         </Grid>
