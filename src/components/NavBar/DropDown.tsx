@@ -1,4 +1,5 @@
 import { Item } from "./Item";
+import { navStyle, navItemStyle } from "../Utilities/colors";
 
 interface Props {
   title: string;
@@ -6,9 +7,6 @@ interface Props {
 }
 
 function DropDown({ title, items }: Props) {
-
-  const navStyle = { backgroundColor: "#0A1128" };
-  const navItemStyle = {color: "#CAF0F8"};
   
   return (
     <li className="nav-item dropdown">

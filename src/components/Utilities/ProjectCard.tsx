@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { CardActionArea } from '@mui/material';
+import { titleStyle, bodyStyle } from './colors';
 
 export type Project = {
     title: string;
@@ -25,9 +26,6 @@ const theme = createTheme({
 })
 
 export default function ProjectCard({project}: Props){
-
-    const titleStyle = "#CAF0F8";
-    const bodyStyle = "#001F54";
 
     return (
         <ThemeProvider theme={theme}>

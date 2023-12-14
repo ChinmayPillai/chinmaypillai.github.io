@@ -1,5 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import InternCard, { Intern } from "../Utilities/InternCard";
+import { headingStyle } from "../Utilities/colors";
 
 const InternList: Intern[] = [
   {
@@ -29,8 +30,6 @@ const InternList: Intern[] = [
 ]
 
 function Interns() {
-
-  const headingStyle = "#FEFCFB"
 
   return (
     <Container>

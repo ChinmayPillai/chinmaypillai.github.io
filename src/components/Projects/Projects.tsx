@@ -1,5 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import ProjectCard, { Project } from "../Utilities/ProjectCard";
+import { headingStyle } from "../Utilities/colors";
 
 const ProjectList: Project[] = [
   {
@@ -66,8 +67,6 @@ const ProjectList: Project[] = [
 ]
 
 function Projects() {
-
-  const headingStyle = "#FEFCFB"
 
   return (
     <Container>

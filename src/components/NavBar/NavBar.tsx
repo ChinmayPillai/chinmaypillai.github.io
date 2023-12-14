@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import DropDown from "./DropDown";
 import { Item, NavItem } from "./Item";
+import { navStyle } from "../Utilities/colors";
 
 const Home: Item = {
   name: "Home",
@@ -67,7 +68,6 @@ const Resume: Item = {
 
 function NavBar() {
 
-  const navStyle = { backgroundColor: "#0A1128" };
 
   return (
     <>

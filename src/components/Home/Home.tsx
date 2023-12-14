@@ -1,10 +1,9 @@
 import About from "./About";
 import DP from "./DP";
 import { Container, Grid, Typography } from "@mui/material";
+import { headingStyle } from "../Utilities/colors";
 
 function Home() {
-
-  const headingStyle = "#FEFCFB"
 
   return (
     <Container>

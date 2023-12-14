@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { navItemStyle } from "../Utilities/colors";
 
 export type Item = {
   name: string;
@@ -11,8 +12,6 @@ interface Props {
 }
 
 export function NavItem({ item }: Props) {
-
-  const navItemStyle = {color: "#CAF0F8"};
 
   if (item.internal) {
     return (
