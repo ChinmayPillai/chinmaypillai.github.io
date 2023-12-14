@@ -36,7 +36,7 @@ function Interns() {
       <Grid container spacing={2} sx={{ mb: 4, mt: 4 }}>
           <Grid item xs={12}>
               <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 4 }}>
-                Internships
+                Interns
               </Typography>
           </Grid>
 
