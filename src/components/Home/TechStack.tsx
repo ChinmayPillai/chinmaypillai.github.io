@@ -3,7 +3,8 @@ import { headingStyle, titleStyle } from "../Utilities/colors"
 export default function TechStack(){
 
     const imgBg = {
-        backgroundColor: "white"
+        backgroundColor: headingStyle,
+        padding: 5
     }
 
     const imgSize = "60"
