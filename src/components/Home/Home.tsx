@@ -8,9 +8,9 @@ function Home() {
   return (
     <Container>
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} sx={{ mb: 4, mt: 4 }}>
           <Typography variant="h1" align="center" color={headingStyle}>
-            About Me
+            Chinmay Pillai
           </Typography>
         </Grid>
         <Grid item xs={12} sm={8} md={9}>
