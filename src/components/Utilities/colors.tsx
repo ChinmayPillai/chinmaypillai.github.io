@@ -11,3 +11,6 @@ export const navItemStyle = {
 export const headingStyle = "#FEFCFB"
 export const titleStyle = "#CAF0F8";
 export const bodyStyle = "#001F54";
+
+//Text
+export const textColour = "#61a5c2";
