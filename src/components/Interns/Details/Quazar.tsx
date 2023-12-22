@@ -4,18 +4,25 @@ import { headingStyle, textColour } from "../../Utilities/colors";
 export default function Quazar(){
     return(
         <div>
-            <Typography variant="h2" align="center" color={headingStyle}>
+            <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
                 Quazar
             </Typography>
-            <Typography align="center" color={textColour}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. It has survived not only five centuries, but also the leap into 
-                electronic typesetting, remaining essentially unchanged. It was popularised in 
-                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum.
+
+
+            <Typography variant="h6" align="left" color={textColour}>
+                - Programmed a Multi-Body Gravity Simulator in Python and the code to animate its evolution with time
+            </Typography>
+            <Typography variant="h6" align="left" color={textColour}>
+                - Developed Drivers in C++ which scan, connect, poll and configure angular velocity, of a graphene spin coater
+            </Typography>
+            <Typography variant="h6" align="left" color={textColour}>
+                - Programmed BASH & Python Scripts for Image & Video Processing, respectively, on feed from a Microscope
+            </Typography>
+            <Typography variant="h6" align="left" color={textColour}>
+                - Programmed an animated Solar System Simulator with 98.26% accuracy in the orbital time periods of planets
+            </Typography>
+            <Typography variant="h6" align="left" color={textColour}>
+                - Built Data Acquisition Engine & GUI in C++ and processed feed from microscope using BASH & Python
             </Typography>
         </div>
     )

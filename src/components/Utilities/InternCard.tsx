@@ -89,7 +89,7 @@ export default function InternCard({project}: Props){
             <Card 
                 sx={{
                     background: theme => theme.palette.background.gradient,
-                    transition: 'background 0.5s ease',
+                    transition: 'background 0.25s ease',
                     // '&:hover': {
                     //   cursor: 'pointer',
                     //   background: `linear-gradient(45deg, ${gradientColors[1][0]}, ${gradientColors[1][1]})`,
