@@ -76,7 +76,7 @@ function Interns() {
 
           {InternList.map((internProj) => (
             <internContext.Provider value={intern}>
-              <Grid item xs={12} sm={6} md={3} onClick={() => handleClick(internProj.name)}>
+              <Grid item xs={6} md={3} onClick={() => handleClick(internProj.name)}>
                 <InternCard project={internProj} />
               </Grid>
             </internContext.Provider>
