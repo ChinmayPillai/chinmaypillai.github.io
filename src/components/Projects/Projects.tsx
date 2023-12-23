@@ -1,7 +1,14 @@
 import { Container, Grid, Typography } from "@mui/material";
+import { createContext, useState } from "react";
 import ProjectCard, { Project } from "../Utilities/ProjectCard";
 import { headingStyle } from "../Utilities/colors";
 import PromProjCard, {ProminentProj} from "../Utilities/PromProjCard";
+import MERN from "./Details/MERN";
+import SpeechDec from "./Details/SpeechDec";
+import Simulator from "./Details/Simulator";
+import Portfolio from "./Details/Portfolio";
+
+
 
 const ProjectList: Project[] = [
     {
@@ -57,51 +64,81 @@ const promiment_projects: ProminentProj[] = [
         link: "https://github.com/ChinmayPillai/Speech-Detection",
     },
     {
-        title: "React Typescript Portfolio Website ",
-        des: "This website which was made using React, Material UI and Bootstrap using Typescript",
-        date: "June 2023 - Present",
-        link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
-    },
-    {
         title: "Multi-Particle Gravity Simulator",
         des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
         date: "Oct-Nov 2022",
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
     },
+    {
+        title: "React Typescript Portfolio Website",
+        des: "This website which was made using React, Material UI and Bootstrap using Typescript",
+        date: "June 2023 - Present",
+        link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
+    },
 ]
+
+type ProjMap = {
+        [key: string]: React.FC; // or React.ComponentType, depending on your components
+    };
+    
+    const projectMap: ProjMap = {
+        "MERN E-Commerce Web Application": MERN,
+        "Speech Detection ML Model": SpeechDec,
+        "Multi-Particle Gravity Simulator": Simulator,
+        "React Typescript Portfolio Website": Portfolio,
+    };
+    
+    
+    export const projContext = createContext<string>("MERN E-Commerce Web Application")
 
 function Projects() {
 
-  return (
-      <Container>
-          <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
-              <Grid item xs={12}>
-                  <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                    Prominent Projects
-                  </Typography>
-              </Grid>
+    
+    const [project, setProject] = useState<string>("MERN E-Commerce Web Application");
 
-              {promiment_projects.map((project) => (
-                  <Grid item xs={12} sm={6}>
-                      <PromProjCard project={project} />
-                  </Grid>
-            ))}
-          </Grid>
 
-          <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
-              <Grid item xs={12}>
-                  <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                    Other Projects
-                  </Typography>
-              </Grid>
+    const ProjectDetail = projectMap[project]
 
-              {ProjectList.map((project) => (
-                  <Grid item xs={12} sm={6}>
-                      <ProjectCard project={project} />
-                  </Grid>
-            ))}
-          </Grid>
-      </Container>
+    function handleClick(name: string){
+        setProject(name)
+    }
+
+    return (
+        <Container sx={{ mb: 10}}>
+            <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
+                <Grid item xs={12}>
+                    <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                        Prominent Projects
+                    </Typography>
+                </Grid>
+
+                {promiment_projects.map((proj) => (
+                    <projContext.Provider value={project}>
+                        <Grid item xs={12} sm={6} onClick={() => handleClick(proj.title)}>
+                            <PromProjCard project={proj} />
+                        </Grid>
+                    </projContext.Provider>
+                ))}
+
+                <Grid item xs={12} sx={{ m: 4 }} >
+                    <ProjectDetail/>
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
+                <Grid item xs={12}>
+                    <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                        Other Projects
+                    </Typography>
+                </Grid>
+
+                {ProjectList.map((project) => (
+                    <Grid item xs={12} sm={6}>
+                        <ProjectCard project={project} />
+                    </Grid>
+                ))}
+            </Grid>
+        </Container>
   );
 }
 

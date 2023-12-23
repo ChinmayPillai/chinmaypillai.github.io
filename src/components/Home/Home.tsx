@@ -7,7 +7,7 @@ import { headingStyle } from "../Utilities/colors";
 function Home() {
 
   return (
-    <Container>
+    <Container sx={{ mb: 10}}>
       <Grid container>
         <Grid item xs={12} >
           <Typography variant="h1" align="center" color={headingStyle}>

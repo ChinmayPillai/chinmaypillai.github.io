@@ -3,7 +3,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { CardActionArea, createTheme, ThemeProvider } from '@mui/material';
 import { titleStyle, bodyStyle } from './colors';
 import { useState, useContext, useEffect } from 'react';
 import { internContext } from '../Interns/Interns';
@@ -99,32 +99,34 @@ export default function InternCard({project}: Props){
                   onMouseLeave={handleMouseLeave}
                 //   onClick={handleClick}
             >
-                <CardMedia
-                    component="img"
-                    height = "100%"
-                    image={project.img}
-                    alt={project.title}
-                />
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height = "100%"
+                        image={project.img}
+                        alt={project.title}
+                    />
 
-                
-                <CardHeader 
-                    title={
-                        <Typography variant="h5" color={titleStyle}>
-                            {project.title}
-                        </Typography>
-                    }
-                    subheader={
-                        <Typography color={bodyStyle} >
-                            {project.date}
-                        </Typography>
-                    }
-                />
+                    
+                    <CardHeader 
+                        title={
+                            <Typography variant="h5" color={titleStyle}>
+                                {project.title}
+                            </Typography>
+                        }
+                        subheader={
+                            <Typography color={bodyStyle} >
+                                {project.date}
+                            </Typography>
+                        }
+                    />
 
-                <CardContent>
-                    <Typography variant="body1" color={bodyStyle} >
-                        {project.des}
-                    </Typography>
-                </CardContent>
+                    <CardContent>
+                        <Typography variant="body1" color={bodyStyle} >
+                            {project.des}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
             </Card>
         </ThemeProvider>
             

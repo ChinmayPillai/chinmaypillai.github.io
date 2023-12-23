@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea, createTheme, ThemeProvider } from '@mui/material';
 import { titleStyle, bodyStyle } from './colors';
 import { useState, useContext, useEffect } from 'react';
-import { internContext } from '../Interns/Interns';
+import { projContext } from '../Projects/Projects';
 
 declare module '@mui/material/styles' {
     interface TypeBackground {
@@ -50,19 +50,19 @@ const gradientColors = [
 
 export default function PromProjCard({project}: Props){
 
-    const intern = useContext(internContext)
+    const proj = useContext(projContext)
+
+    const [gradientIndex, setGradientIndex] = useState<number>(0);
 
     useEffect(() => {
-        if(intern == project.title)
+        if(proj == project.title)
             setGradientIndex(2);
         else if(gradientIndex != 1)
             setGradientIndex(0);
     })
 
-    const [gradientIndex, setGradientIndex] = useState<number>(0);
-
     const handleMouseEnter = () => {
-        if(intern != project.title){
+        if(proj != project.title){
             setGradientIndex(1); // Set to the second gradient on hover
         }
     };
@@ -99,7 +99,7 @@ export default function PromProjCard({project}: Props){
                   onMouseLeave={handleMouseLeave}
                 //   onClick={handleClick}
             >
-                <CardActionArea  href={project.link ? project.link : "https://github.com/chinmaypillai" } target="_blank">
+                <CardActionArea>
                     {project.img && (<CardMedia
                         component="img"
                         height = "100%"
