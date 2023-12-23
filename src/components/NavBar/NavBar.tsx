@@ -66,6 +66,11 @@ const Resume: Item = {
   //link: "https://drive.google.com/file/d/1U7e5V5oUhajBXn1k45he0e7jPuybtEG8/view?usp=sharing",
   link: "https://drive.google.com/file/d/1UQvnG2s63d0hqeoBAcKeOfTJZoC1asLw/view?usp=drive_link"
 };
+const About: Item = {
+  name: "About",
+  link: "/about#",
+  internal: true,
+};
 
 function NavBar() {
 
@@ -108,6 +113,7 @@ function NavBar() {
               <NavItem item={Resume} />
               <DropDown title="Email" items={Emails} />
               <DropDown title="Socials" items={Socials} />
+              <NavItem item={About} />
             </ul>
             {/*<form className="d-flex" role="search">
                 <input

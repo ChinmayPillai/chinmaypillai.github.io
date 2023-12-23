@@ -13,9 +13,11 @@ export default function TechStack(){
 
     return(
         <div>
-            <Typography variant="h3" color={headingStyle} style={{textAlign:"left"}}>Tech Stack:</Typography >
+            <Typography variant="h3" color={headingStyle} style={{textAlign:"left"}} sx={{textDecoration: 'underline', mb: 2}}>
+                Tech Stack:
+            </Typography >
 
-            <br/>
+
 
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 Programming Languages:
@@ -30,7 +32,6 @@ export default function TechStack(){
                 <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width={imgSize} height={imgSize}/> </a>
             </p>
 
-            <br/>
 
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 AI/ML:
@@ -44,7 +45,7 @@ export default function TechStack(){
                 <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width={imgSize} height={imgSize}/> </a>
             </p>
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 Backend Development:
@@ -56,7 +57,7 @@ export default function TechStack(){
                 <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width={imgSize} height={imgSize}/> </a>
             </p>
 
-            <br/>
+
             
 
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
@@ -69,7 +70,7 @@ export default function TechStack(){
                 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width={imgSize} height={imgSize}/> </a>
             </p>
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 Database:
@@ -82,7 +83,7 @@ export default function TechStack(){
             </p>
 
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 DevOps:
@@ -93,7 +94,7 @@ export default function TechStack(){
                 <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width={imgSize} height={imgSize}/> </a>  
             </p>
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 OS:
@@ -102,7 +103,7 @@ export default function TechStack(){
                 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width={imgSize} height={imgSize}/> </a> 
             </p>
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 CI/CD:
@@ -112,7 +113,7 @@ export default function TechStack(){
             </p>
 
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 Frameworks:
@@ -121,7 +122,7 @@ export default function TechStack(){
                 <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img style={imgBg} src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width={imgSize} height={imgSize}/> </a>
             </p>
 
-            <br/>
+
             
             <Typography variant="h4" color={textColour} style={{textAlign:"left"}}>
                 Other Software:
