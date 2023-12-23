@@ -67,7 +67,7 @@ function Interns() {
 
   return (
     <Container sx={{ mb: 10}}>
-      <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
+      <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
           <Grid item xs={12}>
               <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
                 Interns
