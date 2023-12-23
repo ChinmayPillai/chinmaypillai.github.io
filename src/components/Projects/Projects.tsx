@@ -53,27 +53,31 @@ const ProjectList: Project[] = [
 const promiment_projects: ProminentProj[] = [
     {
         title: "MERN E-Commerce Web Application",
-        des: "Full-Stack E-Commerce Web Application using MERN stack with User Authentication and Encryption",
+        des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
         date: "May-July 2023",
         link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
+        img: "/MERN.png",
     },
     {
         title: "Speech Detection ML Model",
         des: "Neural-Network Model that detects all speech segments in audio using MFCC features",
         date: "Oct-Nov 2023",
         link: "https://github.com/ChinmayPillai/Speech-Detection",
+        img: "/Microphone2.jpg",
     },
     {
         title: "Multi-Particle Gravity Simulator",
         des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
         date: "Oct-Nov 2022",
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
+        img: "/Simulator.png",
     },
     {
         title: "React Typescript Portfolio Website",
         des: "This website which was made using React, Material UI and Bootstrap using Typescript",
         date: "June 2023 - Present",
         link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
+        img: "/Portfolio.png",
     },
 ]
 
@@ -114,7 +118,7 @@ function Projects() {
 
                 {promiment_projects.map((proj) => (
                     <projContext.Provider value={project}>
-                        <Grid item xs={12} sm={6} onClick={() => handleClick(proj.title)}>
+                        <Grid item xs={6} md={3} onClick={() => handleClick(proj.title)}>
                             <PromProjCard project={proj} />
                         </Grid>
                     </projContext.Provider>
