@@ -1,4 +1,3 @@
-import About from "../About/About";
 import DP from "./DP";
 import TechStack from "./TechStack";
 import { Container, Grid, Typography } from "@mui/material";
