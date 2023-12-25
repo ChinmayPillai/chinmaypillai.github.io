@@ -13,9 +13,9 @@ function Home() {
                         Chinmay Pillai
                     </Typography>
                 </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={8}>  
                     <Typography variant="h6" align="left" color={textColour} >
-                        I am a curious developer studying in 
+                        I am a curious developer studying in IIT Kanpur
                         with <span style={{ fontWeight: 'bold' }}>1.5 years</span> of 
                         internship experience in software. I have worked 
                         on <span style={{ fontWeight: 'bold' }}>Full Stack Web Applications, 

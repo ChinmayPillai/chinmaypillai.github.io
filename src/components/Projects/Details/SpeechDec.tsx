@@ -1,25 +1,25 @@
-import { Typography } from "@mui/material";
-import { headingStyle, textColour } from "../../Utilities/colors";
+import { Typography, ThemeProvider } from "@mui/material";
+import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
 
 export default function SpeechDec(){
     return(
         <div>
-            <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
+            <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
                 Speech Detection Model
             </Typography>
             
-            <Typography variant="h6" align="left" color={textColour}>
-                
-            </Typography>
-            <Typography variant="h6" align="left" color={textColour}>
-                
-            </Typography>
-            <Typography variant="h6" align="left" color={textColour}>
-                
-            </Typography>
-            <Typography variant="h6" align="left" color={textColour}>
-                
-            </Typography>
+            <ThemeProvider theme={projTextTheme}>
+                <Typography variant="h6" align="left" color={textColour}>
+                    <ul>
+                        <li>
+                            Developed a Machine Learning model that identifies all speech segments in an audio file. 
+                        </li><li>
+                             Achieved ~97% accuracy in estimating all speech segments
+                        </li>
+                    </ul>
+                </Typography>
+            </ThemeProvider>
+
         </div>
     )
 }

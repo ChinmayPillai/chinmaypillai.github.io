@@ -3,7 +3,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { CardMedia, createTheme, ThemeProvider } from '@mui/material';
 import { CardActionArea } from '@mui/material';
 import { titleStyle, bodyStyle } from './colors';
 
@@ -19,19 +19,13 @@ export type Project = {
     des?: string;
     date?: string;
     link?: string;
+    img?: string;
 };
   
-interface Props {
+export interface Props {
     project: Project;
 }
 
-// const theme = createTheme({
-//     palette: {
-//         background: {
-//           paper: '#1282A2', // your color
-//         },
-//       },
-// })
 
 const gradientColors = [
     ['#2A6F97', '#014F86'], // Initial gradient
@@ -81,6 +75,14 @@ export default function ProjectCard({project}: Props){
                   onMouseLeave={handleMouseLeave}
             >
                 <CardActionArea href={project.link ? project.link : "https://github.com/chinmaypillai" } target="_blank">
+                    
+                    {project.img && (<CardMedia
+                            component="img"
+                            height = "100%"
+                            image={project.img}
+                            alt={project.title}
+                    />)}
+                    
                     <CardHeader 
                         title={
                             <Typography variant="h5" color={titleStyle}>

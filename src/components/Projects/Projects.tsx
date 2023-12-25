@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import { createContext, useState } from "react";
 import ProjectCard, { Project } from "../Utilities/ProjectCard";
 import { headingStyle } from "../Utilities/colors";
-import PromProjCard, {ProminentProj} from "../Utilities/PromProjCard";
+import PromProjCard from "../Utilities/PromProjCard";
 import MERN from "./Details/MERN";
 import SpeechDec from "./Details/SpeechDec";
 import Simulator from "./Details/Simulator";
@@ -12,45 +12,51 @@ import Portfolio from "./Details/Portfolio";
 
 const ProjectList: Project[] = [
     {
+        title: "Singing Detection ML Model",
+        des: "Neural-Network Model that detects segments in audio with singing voices using MFCC features",
+        date: "Oct-Nov 2023",
+        link: "https://github.com/ChinmayPillai/Singing-Detection",
+        img: "/Singing.jpg",
+    },
+    {
         title: "Stroke Detection & Clustering ML Model",
         des: "Neural-Network + K-Means Clustering Model that detects & \
               clusters different musical instrument strokes",
         date: "Oct-Nov 2023",
         link: "https://github.com/ChinmayPillai/Stroke-Detection-and-Clustering",
-    },
-    {
-        title: "Singing Detection ML Model",
-        des: "Neural-Network Model that detects segments in audio with singing voices using MFCC features",
-        date: "Oct-Nov 2023",
-        link: "https://github.com/ChinmayPillai/Singing-Detection",
+        img: "/Onset.jpg",
     },
     {
         title: "Raytracing & Procedural Generation",
         des: "Implement Raytracing and Procedural Generation for developing Computer Graphics using OOPS",
         date: "May-July 2023",
         link: "https://github.com/ChinmayPillai/Computer-Graphics-and-Rendering",
+        img: "/RayTrace.jpg",
     },
     {
         title: "Live Focussed Frame Finder",
         des: "Classify frames of a live video feed int focussed or unfocussed. Made for microscope feed",
         date: "Dec 2022",
         link: "https://github.com/ChinmayPillai/Find-Focussed-Frames-of-Video",
+        img: "/Focus.jpg",
     },
     {
         title: "Blockchain Voting Smart Contract",
         des: "Voting Smart Contract for Decentralised Blockchain using Solidity. IIT Kanpur Workshop",
         date: "Mar 2023",
         link: "https://github.com/ChinmayPillai/Blockchain-Voting-Smart-Contract",
+        img: "/Solidity.png",
     },
     {
         title: "BASH Image Processing",
         des: "BASH scripts to process/modify images from a microscope feed using imagemagik package",
         date: "Dec 2022",
         link: "https://github.com/ChinmayPillai/Image-Overlay-with-ImageMagick",
+        img: "/BASH.jpg",
     },
 ]
 
-const promiment_projects: ProminentProj[] = [
+const promiment_projects: Project[] = [
     {
         title: "MERN E-Commerce Web Application",
         des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
@@ -111,7 +117,7 @@ function Projects() {
         <Container sx={{ mb: 10}}>
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
                 <Grid item xs={12}>
-                    <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                    <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
                         Prominent Projects
                     </Typography>
                 </Grid>
@@ -131,13 +137,13 @@ function Projects() {
 
             <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
                 <Grid item xs={12}>
-                    <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                    <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
                         Other Projects
                     </Typography>
                 </Grid>
 
                 {ProjectList.map((project) => (
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} sx={{mb:2}}>
                         <ProjectCard project={project} />
                     </Grid>
                 ))}

@@ -6,15 +6,15 @@ function About() {
 
     return (
         <Container sx={{ mb: 10}}>
-            <Typography variant="h1" align="center" color={headingStyle} sx={{ mb: 2, mt: 2}}>
-              Chinmay Pillai
+            <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2, mt: 2}}>
+              About Me
             </Typography>
             <div className="badge text-wrap">
                 {/* <h1 className="display-1">About Me</h1> */}
                 <p className="text-start lead fs-5 fw-normal lh-base about">
                     I am an IIT Kanpur student pursuing a Double Major in Electrical Engineering + Physics, 
                     and a Minor in Machine Learning. Additionally, 
-                    this, I'm a two-time National Bronze Medalist in Speed Skating.
+                    this, I'm a 2x National Medalist in Speed Skating.
                 </p>
                 <br />
                 <br />

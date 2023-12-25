@@ -3,37 +3,18 @@ import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea, createTheme, ThemeProvider } from '@mui/material';
+import { Box, Button, CardActionArea, createTheme, ThemeProvider } from '@mui/material';
 import { titleStyle, bodyStyle } from './colors';
 import { useState, useContext, useEffect } from 'react';
 import { projContext } from '../Projects/Projects';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Props } from './ProjectCard';
 
 declare module '@mui/material/styles' {
     interface TypeBackground {
       gradient?: string;
     }
   }
-
-
-export type ProminentProj = {
-    title: string;
-    des: string;
-    date: string;
-    img?: string;
-    link: string;
-};
-  
-interface Props {
-    project: ProminentProj;
-}
-
-// const theme = createTheme({
-//     palette: {
-//         background: {
-//           paper: '#1282A2', // your color
-//         },
-//       },
-// })
 
 const gradientColors = [
     ['#2A6F97', '#014F86'], // Initial gradient
@@ -126,7 +107,20 @@ export default function PromProjCard({project}: Props){
                             {project.des}
                         </Typography>
                     </CardContent>
+
+                    <Box
+                        sx={{
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        paddingRight: 1, // Adjust the padding as needed
+                        }}
+                    >
+                        <Button size="small" color="primary" sx={{ mb: 1 }} href={project.link ? project.link : "https://github.com/chinmaypillai" } target="_blank">
+                            <GitHubIcon sx={{ color: 'white' }} />
+                        </Button>
+                    </Box>
                 </CardActionArea>
+
             </Card>
         </ThemeProvider>
             
