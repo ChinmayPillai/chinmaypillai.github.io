@@ -16,7 +16,7 @@ function Home() {
     })
 
     return (
-        <Container sx={{ mb: 10}}>
+        <Container sx={{ mb: 7, mt: 5}}>
             <ThemeProvider theme={theme}>
                 <Grid container sx={{ mb: 2, mt: 1 }}>
                     <Grid item xs={10}sx={{ mt: 1}}>
