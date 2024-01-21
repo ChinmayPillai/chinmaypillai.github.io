@@ -1,6 +1,7 @@
 import DP from "./DP";
 import TechStack from "./TechStack";
-import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
+import TechStackSmall from "./TechStackSmall";
+import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
 import { headingStyle, textColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -14,6 +15,8 @@ function Home() {
         words: ["Full-Stack Web Dev.", "Machine Learning.", "Blockchain."],
         loop: true,
     })
+
+    const isScreenSizeMedium = useMediaQuery('(min-width: 1080px)');
 
     return (
         <Container sx={{ mb: 7, mt: 5}}>
@@ -65,9 +68,15 @@ function Home() {
                             and developing skills as much as possible.
                 
                         </Typography>
-                        <Grid item sx={{ mb: 4, mt: 5 }}>
-                            <TechStack />
-                        </Grid>
+                        {isScreenSizeMedium ? (
+                            <Grid item sx={{ mb: 4, mt: 5 }}>
+                                <TechStack />
+                            </Grid>
+                        ) : (
+                            <Grid item sx={{ mb: 4, mt: 5 }}>
+                                <TechStackSmall />
+                            </Grid>
+                        )}
                     </Grid>
                 
                 </Grid>
