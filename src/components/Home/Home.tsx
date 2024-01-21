@@ -1,7 +1,7 @@
 import DP from "./DP";
 import TechStack from "./TechStack";
 import { Container, Grid, Typography } from "@mui/material";
-import { headingStyle, textColour, titleStyle } from "../Utilities/colors";
+import { headingStyle, textColour } from "../Utilities/colors";
 
 function Home() {
 
@@ -12,12 +12,17 @@ function Home() {
                     
                 </Grid> */}
                 <Grid item xs={8}>  
-                    <Typography variant="h6" align="left" color={textColour} sx={{ mt: 1 }}>
-                        Hi, I'm 
-                    </Typography>
-                    <Typography variant="h2" align="left" color={headingStyle} sx={{mb: 2}}>
-                        Chinmay Pillai
-                    </Typography>
+                    <div className="mt-2 mb-2">
+                        <Typography variant="h4" align="left" color={textColour}>
+                            Hi, I'm 
+                        </Typography>
+                        <Typography variant="h1" align="left" color={headingStyle}>
+                            Chinmay Pillai
+                        </Typography>
+                        <Typography variant="h2" align="left" color={headingStyle}>
+                            I'm a Developer
+                        </Typography>
+                    </div>
 
                     <Typography variant="h6" align="left" color={textColour} >
                         I am a curious developer studying in IIT Kanpur
