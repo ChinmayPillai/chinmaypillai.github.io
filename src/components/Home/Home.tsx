@@ -61,7 +61,6 @@ function Home() {
                             AI/ML Models, C++ Driver Development</span> and
                             more during these internships.
                             <br />
-                            <br />
                             I am very passionate toward having a significant impact while learning
                             and developing skills as much as possible.
                 
