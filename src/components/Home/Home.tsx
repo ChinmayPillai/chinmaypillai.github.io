@@ -1,19 +1,24 @@
 import DP from "./DP";
 import TechStack from "./TechStack";
 import { Container, Grid, Typography } from "@mui/material";
-import { headingStyle, textColour } from "../Utilities/colors";
+import { headingStyle, textColour, titleStyle } from "../Utilities/colors";
 
 function Home() {
 
     return (
         <Container sx={{ mb: 10}}>
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
-                <Grid item xs={12} >
-                    <Typography variant="h1" align="center" color={headingStyle}>
+                {/* <Grid item xs={12} >
+                    
+                </Grid> */}
+                <Grid item xs={8}>  
+                    <Typography variant="h6" align="left" color={textColour} sx={{ mt: 1 }}>
+                        Hi, I'm 
+                    </Typography>
+                    <Typography variant="h2" align="left" color={headingStyle} sx={{mb: 2}}>
                         Chinmay Pillai
                     </Typography>
-                </Grid>
-                <Grid item xs={8}>  
+
                     <Typography variant="h6" align="left" color={textColour} >
                         I am a curious developer studying in IIT Kanpur
                         with <span style={{ fontWeight: 'bold' }}>1.5 years</span> of 
@@ -31,7 +36,7 @@ function Home() {
                         <TechStack />
                     </Grid>
                 </Grid>
-                <Grid item xs={4} sx={{ mt: 4 }}>
+                <Grid item xs={4} sx={{ mt: 1 }}>
                     <DP />
                 </Grid>
                 
