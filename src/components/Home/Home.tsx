@@ -30,7 +30,7 @@ function Home() {
                             <Typography variant={isScreenSmallPlus ? "h1" : "h2"} align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
                                 Chinmay Pillai
                             </Typography>
-                            <Typography variant="h4" align="left" color={headingStyle}>
+                            <Typography variant={isScreenSmallPlus ? "h4" : "h5"} align="left" color={headingStyle}>
                                 <span style={{ whiteSpace: "nowrap" }}>
                                     {isScreenMediumPlus ? "I'm a " : "A "}
                                     <span style={{ fontWeight: "bold", color: highlightColour}}>
@@ -49,7 +49,7 @@ function Home() {
                         <DP />
                     </Grid>) : null }
                     <Grid item xs={12} sx={{mb: 4}}>
-                        <Typography variant="h4" align="left" color={headingStyle} sx={{ mb: 2}}>
+                        <Typography variant={isScreenSmallPlus ? "h4" : "h5"} align="left" color={headingStyle} sx={{ mb: 2}}>
                             {"I love "}
                             <span style={{fontWeight: "bold", color: "#06d6a0"}}>
                                 {myPassions}
