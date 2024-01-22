@@ -49,8 +49,8 @@ function Home() {
                     </Grid>) : null }
                     <Grid item xs={12} sx={{mb: 4}}>
                         <Typography variant="h4" align="left" color={headingStyle} sx={{ mb: 2}}>
-                            I love
-                            <span style={{fontWeight: "bold", color: "#06d6a0", marginLeft: "10px"}}>
+                            {"I love "}
+                            <span style={{fontWeight: "bold", color: "#06d6a0"}}>
                                 {myPassions}
                             </span>
                             <span style={{color: "white"}}>
