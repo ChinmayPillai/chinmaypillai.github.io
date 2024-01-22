@@ -63,15 +63,13 @@ function Home() {
                                 <Cursor />
                             </span>
                         </Typography>
-                        <Typography variant="h6" align="left" color={textColour} >
+                        <Typography variant="h6" align="justify" color={textColour} >
                             I am a curious developer studying in IIT Kanpur
                             with <span style={{ fontWeight: 'bold' }}>1.5 years</span> of
                             internship experience in software. I have worked
                             on <span style={{ fontWeight: 'bold' }}>Full Stack Web Applications,
                             AI/ML Models, C++ Driver Development</span> and
-                            more during these internships.
-                            <br />
-                            I am very passionate toward having a significant impact while learning
+                            more during these internships. I am very passionate toward having a significant impact while learning
                             and developing skills as much as possible.
                 
                         </Typography>
