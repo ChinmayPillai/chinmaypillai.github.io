@@ -38,9 +38,16 @@ function Home() {
                                         </span>
                                         from
                                     </span>
-                                    <span style={{ fontWeight: "bold", color: highlightColour, marginLeft: "10px" }}>
-                                        IIT Kanpur
-                                    </span>
+                                    {isScreenSizeMedium ? (
+                                        <span style={{ fontWeight: "bold", color: highlightColour, marginLeft: "10px" }}>
+                                            IIT Kanpur
+                                        </span>
+                                    ) : (
+                                        <div style={{ fontWeight: "bold", color: highlightColour}}>
+                                            IIT Kanpur
+                                        </div>
+                                    )}
+                                    
                                 </Typography>
                             </Typography>
                         </div>
