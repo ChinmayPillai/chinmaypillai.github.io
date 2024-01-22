@@ -21,8 +21,8 @@ function DropDown({ title, items }: Props) {
         {title}
       </a>
       <ul className="dropdown-menu" style={navStyle}>
-        {items.map((item) => (
-          <li>
+        {items.map((item, index) => (
+          <li key={index}>
             <a className="dropdown-item" target="_blank" href={item.link} style={navItemStyle}>
               {item.name}
             </a>

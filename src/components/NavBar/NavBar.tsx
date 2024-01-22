@@ -104,8 +104,8 @@ function NavBar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-                {NavItems.map( item => (
-                    <NavItem item={item} /> 
+                {NavItems.map( (item, index) => (
+                    <NavItem key={index} item={item} /> 
                 ) )}
                 <DropDown title="Email" items={Emails} />
                 <DropDown title="Socials" items={Socials} />
