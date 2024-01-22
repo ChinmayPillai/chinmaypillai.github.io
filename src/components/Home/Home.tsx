@@ -15,7 +15,8 @@ function Home() {
         loop: true,
     })
 
-    const isScreenSizeMedium = useMediaQuery('(min-width: 700px)');
+    const isScreenMediumPlus = useMediaQuery('(min-width: 700px)');
+    const isScreenSmallPlus = useMediaQuery('(min-width: 400px)');
 
     return (
         <Container sx={{ mb: 7, mt: 5}}>
@@ -26,12 +27,17 @@ function Home() {
                             <Typography variant="h4" align="left" color={textColour}>
                                 Hi, I'm
                             </Typography>
+                            {isScreenSmallPlus ? (
                             <Typography variant="h1" align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
                                 Chinmay Pillai
                             </Typography>
+                            ) : (
+                                <Typography variant="h2" align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
+                                Chinmay Pillai
+                            </Typography>)}
                             <Typography variant="h4" align="left" color={headingStyle}>
                                 <span style={{ whiteSpace: "nowrap" }}>
-                                    {isScreenSizeMedium ? "I'm a " : "A "}
+                                    {isScreenMediumPlus ? "I'm a " : "A "}
                                     <span style={{ fontWeight: "bold", color: highlightColour}}>
                                         Developer
                                     </span>
@@ -44,7 +50,7 @@ function Home() {
                         </div>
                 
                     </Grid>
-                    {isScreenSizeMedium ? (<Grid item xs={2} sx={{ mt: 1 }}>
+                    {isScreenMediumPlus ? (<Grid item xs={2} sx={{ mt: 1 }}>
                         <DP />
                     </Grid>) : null }
                     <Grid item xs={12} sx={{mb: 4}}>
