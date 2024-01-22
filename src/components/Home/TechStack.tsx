@@ -21,7 +21,7 @@ export default function TechStack() {
         Tech Stack:
       </Typography>
 
-      <Grid container spacing={2} sx={{ ml: 1 }}>
+      <Grid container spacing={2} sx={{ ml: 0.5 }}>
         <Grid xs={12} md={6}>
           <Typography
             variant="h4"
