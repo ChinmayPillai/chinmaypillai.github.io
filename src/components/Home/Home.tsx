@@ -1,6 +1,6 @@
 import DP from "./DP";
 import TechStack from "./TechStack";
-import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
+import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
 import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -15,6 +15,8 @@ function Home() {
         loop: true,
     })
 
+    const isScreenSizeMedium = useMediaQuery('(min-width: 700px)');
+
     return (
         <Container sx={{ mb: 7, mt: 5}}>
             <ThemeProvider theme={theme}>
@@ -24,25 +26,29 @@ function Home() {
                             <Typography variant="h4" align="left" color={textColour}>
                                 Hi, I'm
                             </Typography>
-                            <Typography variant="h1" align="left" color={headingStyle} sx={{mb:1}}>
+                            <Typography variant="h1" align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
                                 Chinmay Pillai
                             </Typography>
                             <Typography variant="h4" align="left" color={headingStyle}>
-                                I'm a
-                                <span style={{fontWeight: "bold", color: highlightColour, marginInline: "10px"}}>
-                                    Developer
-                                </span>
-                                from
-                                <span style={{fontWeight: "bold", color: highlightColour, marginLeft: "10px"}}>
-                                    IIT Kanpur
-                                </span>
+                                <Typography variant="h4" align="left" color={headingStyle}>
+                                    <span style={{ whiteSpace: "nowrap" }}>
+                                        I'm a
+                                        <span style={{ fontWeight: "bold", color: highlightColour, marginInline: "10px" }}>
+                                            Developer
+                                        </span>
+                                        from
+                                    </span>
+                                    <span style={{ fontWeight: "bold", color: highlightColour, marginLeft: "10px" }}>
+                                        IIT Kanpur
+                                    </span>
+                                </Typography>
                             </Typography>
                         </div>
                 
                     </Grid>
-                    <Grid item xs={2} sx={{ mt: 1 }}>
+                    {isScreenSizeMedium ? (<Grid item xs={2} sx={{ mt: 1 }}>
                         <DP />
-                    </Grid>
+                    </Grid>) : null }
                     <Grid item xs={12} sx={{mb: 4}}>
                         <Typography variant="h4" align="left" color={headingStyle} sx={{ mb: 2}}>
                             I love
