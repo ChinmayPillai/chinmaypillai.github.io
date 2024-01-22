@@ -1,7 +1,7 @@
 import DP from "./DP";
 import TechStack from "./TechStack";
 import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
-import { headingStyle, textColour } from "../Utilities/colors";
+import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 
@@ -29,11 +29,11 @@ function Home() {
                             </Typography>
                             <Typography variant="h4" align="left" color={headingStyle}>
                                 I'm a
-                                <span style={{fontWeight: "bold", color: "#06d6a0", marginInline: "10px"}}>
+                                <span style={{fontWeight: "bold", color: highlightColour, marginInline: "10px"}}>
                                     Developer
                                 </span>
                                 from
-                                <span style={{fontWeight: "bold", color: "#06d6a0", marginLeft: "10px"}}>
+                                <span style={{fontWeight: "bold", color: highlightColour, marginLeft: "10px"}}>
                                     IIT Kanpur
                                 </span>
                             </Typography>

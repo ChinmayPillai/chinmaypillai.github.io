@@ -16,6 +16,7 @@ export const bodyStyle = "#001F54";
 
 //Text
 export const textColour = "#61a5c2";
+export const highlightColour = "#06d6a0"
 
 
 export const projTextTheme = createTheme({
