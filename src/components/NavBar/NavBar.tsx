@@ -95,7 +95,7 @@ function NavBar() {
     return (
         <>
         <nav
-            className="navbar sticky-top navbar-expand-lg"
+            className="navbar sticky-top fixed-top navbar-expand-lg"
             data-bs-theme="dark"
             style={navStyle}
         >
