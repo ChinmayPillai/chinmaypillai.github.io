@@ -15,7 +15,9 @@ export const titleStyle = "#CAF0F8";
 export const bodyStyle = "#001F54";
 
 //Text
-export const textColour = "#61a5c2";
+// export const textColour = "#61a5c2";
+// export const textColour = "#dee2e6";
+export const textColour = "#CAF0F8";
 export const highlightColour = "#06d6a0"
 
 
