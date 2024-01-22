@@ -99,7 +99,6 @@ function NavBar() {
             data-bs-theme="dark"
             style={navStyle}
         >
-            {/*<nav className="navbar bg-primary navbar-expand-lg bg-body-tertiary">*/}
             <div className="container-fluid">
             <a className="navbar-brand" href="/#">
                 CP
