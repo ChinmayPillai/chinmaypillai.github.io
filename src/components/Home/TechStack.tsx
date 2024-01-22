@@ -16,7 +16,7 @@ export default function TechStack() {
         variant="h3"
         color={headingStyle}
         style={{ textAlign: "left" }}
-        sx={{ textDecoration: "underline", mb: 2, mt: 5 }}
+        sx={{ textDecoration: "underline", mb: 3, mt: 5 }}
       >
         Tech Stack:
       </Typography>
