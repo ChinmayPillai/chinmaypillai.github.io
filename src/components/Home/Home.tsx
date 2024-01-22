@@ -48,7 +48,7 @@ function Home() {
                     {isScreenMediumPlus ? (<Grid item xs={2} sx={{ mt: 1 }}>
                         <DP />
                     </Grid>) : null }
-                    <Grid item xs={12} sx={{mb: 4}}>
+                    <Grid item xs={12}>
                         <Typography variant={isScreenSmallPlus ? "h4" : "h5"} align="left" color={headingStyle} sx={{ mb: 2}}>
                             {"I love "}
                             <span style={{fontWeight: "bold", color: "#06d6a0"}}>
@@ -58,6 +58,8 @@ function Home() {
                                 <Cursor />
                             </span>
                         </Typography>
+                    </Grid>
+                    <Grid item xs={12}  sx={{mb: 4}}>
                         <Typography variant="h6" align="justify" color={textColour} >
                             I am a curious developer studying in IIT Kanpur
                             with <span style={{ fontWeight: 'bold' }}>1.5 years</span> of
