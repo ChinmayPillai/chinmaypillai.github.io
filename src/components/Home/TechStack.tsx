@@ -22,7 +22,7 @@ export default function TechStack() {
       </Typography>
 
       <Grid container spacing={2} sx={{ ml: 0.5 }}>
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -89,7 +89,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -148,7 +148,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -189,7 +189,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -230,7 +230,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -271,7 +271,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -306,7 +306,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -326,7 +326,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -346,7 +346,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
@@ -366,7 +366,7 @@ export default function TechStack() {
           </p>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             variant="h4"
             color={textColour}
