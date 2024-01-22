@@ -30,25 +30,16 @@ function Home() {
                                 Chinmay Pillai
                             </Typography>
                             <Typography variant="h4" align="left" color={headingStyle}>
-                                <Typography variant="h4" align="left" color={headingStyle}>
-                                    <span style={{ whiteSpace: "nowrap" }}>
-                                        I'm a
-                                        <span style={{ fontWeight: "bold", color: highlightColour, marginInline: "10px" }}>
-                                            Developer
-                                        </span>
-                                        from
+                                <span style={{ whiteSpace: "nowrap" }}>
+                                    {isScreenSizeMedium ? "I'm a " : "A "}
+                                    <span style={{ fontWeight: "bold", color: highlightColour}}>
+                                        Developer
                                     </span>
-                                    {isScreenSizeMedium ? (
-                                        <span style={{ fontWeight: "bold", color: highlightColour, marginLeft: "10px" }}>
-                                            IIT Kanpur
-                                        </span>
-                                    ) : (
-                                        <div style={{ fontWeight: "bold", color: highlightColour}}>
-                                            IIT Kanpur
-                                        </div>
-                                    )}
-                                    
-                                </Typography>
+                                    {" from "}
+                                    <span style={{ fontWeight: "bold", color: highlightColour}}>
+                                        IIT Kanpur
+                                    </span>
+                                </span>
                             </Typography>
                         </div>
                 
