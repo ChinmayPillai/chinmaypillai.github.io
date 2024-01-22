@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 import InternCard, { Intern } from "../Utilities/InternCard";
 import { headingStyle } from "../Utilities/colors";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Samsung from "./Details/Samsung";
 import ACL from "./Details/ACL";
 import IITK from "./Details/IITK";
@@ -64,6 +64,10 @@ function Interns() {
   function handleClick(name: string){
     setIntern(name)
   }
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
 
   return (
     <Container sx={{ mb: 10}}>

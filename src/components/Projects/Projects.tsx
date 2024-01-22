@@ -1,5 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
-import { createContext, useState } from "react";
+import { createContext, useLayoutEffect, useState } from "react";
 import ProjectCard, { Project } from "../Utilities/ProjectCard";
 import { headingStyle } from "../Utilities/colors";
 import PromProjCard from "../Utilities/PromProjCard";
@@ -112,6 +112,10 @@ function Projects() {
     function handleClick(name: string){
         setProject(name)
     }
+    
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <Container sx={{ mb: 10}}>

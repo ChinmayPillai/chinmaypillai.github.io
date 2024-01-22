@@ -2,8 +2,13 @@ import { Container, Typography } from "@mui/material";
 import "../Utilities/colors.css"
 import { headingStyle } from "../Utilities/colors";
 import { Reveal } from "../Utilities/Reveal";
+import { useLayoutEffect } from "react";
 
 function About() {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <Container sx={{ mb: 10}}>
