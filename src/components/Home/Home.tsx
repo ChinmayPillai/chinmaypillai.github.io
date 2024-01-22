@@ -27,14 +27,9 @@ function Home() {
                             <Typography variant="h4" align="left" color={textColour}>
                                 Hi, I'm
                             </Typography>
-                            {isScreenSmallPlus ? (
-                            <Typography variant="h1" align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
+                            <Typography variant={isScreenSmallPlus ? "h1" : "h2"} align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
                                 Chinmay Pillai
                             </Typography>
-                            ) : (
-                                <Typography variant="h2" align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
-                                Chinmay Pillai
-                            </Typography>)}
                             <Typography variant="h4" align="left" color={headingStyle}>
                                 <span style={{ whiteSpace: "nowrap" }}>
                                     {isScreenMediumPlus ? "I'm a " : "A "}
