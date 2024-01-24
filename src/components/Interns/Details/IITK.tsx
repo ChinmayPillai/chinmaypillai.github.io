@@ -12,16 +12,16 @@ export default function IITK(){
                 <Typography variant="h6" align="left" color={textColour}>
                     <ul>
                         <li>
-                            Built a model using Neural Networks to compute High-Dimensional analytical Free Energy Surfaces of molecules
+                            Programmed <span style={{ fontWeight: 'bold' }}>Deep Leaning Regression Model</span> in <span style={{ fontWeight: 'bold' }}>Python</span> using <span style={{ fontWeight: 'bold' }}>PyTorch</span> to compute high-dimensional energy surfaces
                         </li>
                         <li>
-                            Programmed Deep Leaning Regression Model in Python using PyTorch to compute free energy function of molecules
+                            Explored <span style={{ fontWeight: 'bold' }}>Auto Encoders, LLE & Wavelets</span> for dimensionality reduction, before pivoting to Neural Network approach
                         </li>
                         <li>
-                            Devised novel 2-Dimensional Data Structure to resolve memory issues in analysing high-dimensional energy surfaces
+                            Devised novel 2-Dimensional Data Structure to resolve memory issues in analysing the free energies of complex compounds
                         </li>
                         <li>
-                            Developed NN Regression Model with 3.53 RMSE for 6D data & novel model to extend scope to 8+ Dimensions
+                            Developed an NN Regression Model with <span style={{ fontWeight: 'bold' }}>93% accuracy</span> for 6D data & novel model to extend its scope to 8+ Dimensions
                         </li> 
                     </ul>
                 </Typography>

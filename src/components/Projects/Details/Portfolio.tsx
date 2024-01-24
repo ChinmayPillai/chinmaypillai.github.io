@@ -13,10 +13,10 @@ export default function Portfolio(){
                 <Typography variant="h6" align="left" color={textColour}>
                     <ul>
                         <li>
-                            Developed and deployed a React based portfolio website
+                            Developed and deployed a React and Material UI based portfolio website utilising Hooks and ContextAPI for complex state management
                         </li>
                         <li>
-                            Utilised Hooks and ContextAPI for complex state management
+                            Utilised Framer Motion to develop engaging animations
                         </li>
                     </ul>
                 </Typography>
