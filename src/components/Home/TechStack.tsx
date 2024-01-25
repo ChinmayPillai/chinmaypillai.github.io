@@ -80,7 +80,7 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+              src="techStack/progLang/cpp.svg"
               alt="cplusplus"
               width={imgSize}
               height={imgSize}
@@ -88,7 +88,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg"
+              src="techStack/progLang/c.svg"
               alt="c"
               width={imgSize}
               height={imgSize}
@@ -96,7 +96,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+              src="techStack/progLang/cpp.svg"
               alt="python"
               width={imgSize}
               height={imgSize}
@@ -104,7 +104,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+              src="techStack/progLang/typescript.svg"
               alt="typescript"
               width={imgSize}
               height={imgSize}
@@ -112,7 +112,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              src="techStack/progLang/javascript.svg"
               alt="javascript"
               width={imgSize}
               height={imgSize}
@@ -120,7 +120,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              src="techStack/progLang/java.svg"
               alt="java"
               width={imgSize}
               height={imgSize}
@@ -128,7 +128,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+              src="techStack/progLang/csharp.svg"
               alt="csharp"
               width={imgSize}
               height={imgSize}
