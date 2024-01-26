@@ -147,7 +147,7 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
+              src="techStack/aiMl/tensorflow.svg"
               alt="tensorflow"
               width={imgSize}
               height={imgSize}
@@ -155,7 +155,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg"
+              src="techStack/aiMl/pytorch.svg"
               alt="pytorch"
               width={imgSize}
               height={imgSize}
@@ -163,7 +163,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
+              src="techStack/aiMl/pandas.svg"
               alt="pandas"
               width={imgSize}
               height={imgSize}
@@ -171,7 +171,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+              src="techStack/aiMl/Scikit_learn.svg"
               alt="scikit_learn"
               width={imgSize}
               height={imgSize}
@@ -179,7 +179,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg"
+              src="techStack/aiMl/opencv.svg"
               alt="opencv"
               width={imgSize}
               height={imgSize}
@@ -187,7 +187,7 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg"
+              src="techStack/aiMl/seaborn.svg"
               alt="seaborn"
               width={imgSize}
               height={imgSize}
