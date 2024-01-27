@@ -206,28 +206,28 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+              src="techStack/backend/node.svg"
               alt="nodejs"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+              src="techStack/backend/express.svg"
               alt="express"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg"
+              src="techStack/backend/nginx.svg"
               alt="nginx"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg"
+              src="techStack/backend/kafka.svg"
               alt="kafka"
               width={imgSize}
               height={imgSize}
