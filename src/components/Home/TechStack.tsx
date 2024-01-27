@@ -246,28 +246,28 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              src="techStack/frontend/react.svg"
               alt="react"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              src="techStack/frontend/html.svg"
               alt="html5"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              src="techStack/frontend/css.svg"
               alt="css3"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+              src="techStack/frontend/bootstrap.svg"
               alt="bootstrap"
               width={imgSize}
               height={imgSize}
