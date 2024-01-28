@@ -286,28 +286,28 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+              src="techStack/database/mongodb.svg"
               alt="mongodb"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+              src="techStack/database/mysql.svg"
               alt="mysql"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+              src="techStack/database/postgresql.svg"
               alt="postgresql"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
+              src="techStack/database/redis.svg"
               alt="redis"
               width={imgSize}
               height={imgSize}
