@@ -326,7 +326,7 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+              src="techStack/devOps/docker.svg"
               alt="docker"
               width={imgSize}
               height={imgSize}
@@ -334,28 +334,28 @@ export default function TechStack() {
 
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              src="techStack/devOps/aws.svg"
               alt="aws"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+              src="techStack/devOps/linux.svg"
               alt="linux"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+              src="techStack/devOps/git.svg"
               alt="git"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
+              src="techStack/devOps/bash.svg"
               alt="bash"
               width={imgSize}
               height={imgSize}
