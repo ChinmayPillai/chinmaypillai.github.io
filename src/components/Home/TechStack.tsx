@@ -1,4 +1,4 @@
-import { Typography, Grid, Chip } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import { headingStyle, titleStyle } from "../Utilities/colors";
 
 const imgBg = {
@@ -11,50 +11,6 @@ const imgSize = "60";
 const textColour = titleStyle;
 
 const headingSize = "h4";
-
-const chipStyle = {
-  fontSize: "18px",
-  color: headingStyle,
-  backgroundColor: "#01497c",
-  m: 0.25,
-  mb: 2,
-};
-
-const progLang = [
-  "C++",
-  "C",
-  "Python",
-  "TypeScript",
-  "JavaScript",
-  "Java",
-  "C#",
-];
-
-const aiMl = [
-  "TensorFlow",
-  "PyTorch",
-  "Pandas",
-  "Scikit-Learn",
-  "OpenCV",
-  "Seaborn",
-];
-
-const backend = ["NodeJS", "ExpressJS", "Nginx", "Kafka"];
-
-const frontend = [
-  "ReactJS",
-  "HTML",
-  "CSS",
-  "Material UI",
-  "Bootstrap",
-  "Framer Motion",
-];
-
-const database = ["MongoDB", "MySQL", "PostgreSQL", "Redis"];
-
-const devOps = ["Docker", "AWS", "Linux", "Git", "Github Actions", "Bash"];
-
-const otherSoftware = ["MATLAB", "Postman", "Arduino", "Unity", "Photoshop"];
 
 export default function TechStack() {
   return (
@@ -452,100 +408,6 @@ export default function TechStack() {
         </Grid>
       </Grid>
 
-      {/* <Grid container spacing={2} sx={{ ml: 0.5 }}>
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            Programming Languages:
-          </Typography>
-          {progLang.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle}/>
-          ))}
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            Backend Development:
-          </Typography>
-          {backend.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-
-        
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            AI/ML:
-          </Typography>
-          {aiMl.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            Frontend Development:
-          </Typography>
-          {frontend.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            Database:
-          </Typography>
-          {database.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            DevOps:
-          </Typography>
-          {devOps.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-
-        <Grid item xs={12} md={6}>
-          <Typography
-            variant={headingSize}
-            color={textColour}
-            style={{ textAlign: "left" }}
-          >
-            Other Software:
-          </Typography>
-          {otherSoftware.map((label, index) => (
-            <Chip key={index} label={label} color="primary" sx={chipStyle} />
-          ))}
-        </Grid>
-      </Grid> */}
     </div>
   );
 }
