@@ -74,13 +74,13 @@ export default function TechStack() {
               height={imgSize}
             />
 
-            <img
+            {/* <img
               style={imgBg}
               src="techStack/progLang/java.svg"
               alt="java"
               width={imgSize}
               height={imgSize}
-            />
+            /> */}
 
             <img
               style={imgBg}
