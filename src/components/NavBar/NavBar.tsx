@@ -111,16 +111,16 @@ function NavBar() {
                 <DropDown title="Socials" items={Socials} />
                 </ul>
                 <ul className="navbar-nav d-flex">
-                    <div className="d-flex align-items-center mr-3">
-                        <GitHubIcon sx={{ color: headingStyle, ml:1 }} />
+                    <div className="d-flex align-items-center me-2">
+                        <GitHubIcon sx={{ color: headingStyle }} />
                         <NavItem item={GitHub} />
                     </div>
-                    <div className="d-flex align-items-center mr-3">
-                        <LinkedInIcon sx={{ color: headingStyle, ml:1 }} />
+                    <div className="d-flex align-items-center me-2">
+                        <LinkedInIcon sx={{ color: headingStyle }} />
                         <NavItem item={LinkedIn}/>
                     </div>
-                    <div className="d-flex align-items-center mr-3">
-                        <OpenInNewIcon sx={{ color: headingStyle, ml:1 }} />
+                    <div className="d-flex align-items-center">
+                        <OpenInNewIcon sx={{ color: headingStyle }} />
                         <NavItem item={Resume}/>
                     </div>
                 </ul>
