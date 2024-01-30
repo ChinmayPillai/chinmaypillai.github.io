@@ -19,7 +19,7 @@ function Home() {
     const isScreenSmallPlus = useMediaQuery('(min-width: 400px)');
 
     return (
-        <Container sx={{ mb: 7, mt: 5}}>
+        <Container sx={{ mb: 7, mt: 5, minHeight: "100vh"}}>
             <ThemeProvider theme={theme}>
                 <Grid container sx={{ mb: 2, mt: 1 }}>
                     <Grid item xs={10}sx={{ mt: 1}}>

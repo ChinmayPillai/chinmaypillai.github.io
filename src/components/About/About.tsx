@@ -11,7 +11,7 @@ function About() {
     });
 
     return (
-        <Container sx={{ mb: 10}}>
+        <Container sx={{ mb: 10, minHeight: "100vh"}}>
             <Reveal>
                 <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2, mt: 2}}>
                   About Me
