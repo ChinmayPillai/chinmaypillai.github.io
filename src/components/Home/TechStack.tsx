@@ -394,60 +394,60 @@ export default function TechStack() {
           <p style={{ textAlign: "left" }}>
             <img
               style={imgBg}
-              src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+              src="techStack/other/matlab.png"
               alt="matlab"
               width={imgSize}
               height={imgSize}
             />
-            <img
+            {/* <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+              src="techStack/other/postman.svg"
               alt="postman"
               width={imgSize}
               height={imgSize}
-            />
+            /> */}
             <img
               style={imgBg}
-              src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+              src="techStack/other/arduino.svg"
               alt="arduino"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
+              src="techStack/other/unity.svg"
               alt="unity"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+              src="techStack/other/photoshop.svg"
               alt="photoshop"
               width={imgSize}
               height={imgSize}
             />
-            <img
+            {/* <img
               style={imgBg}
-              src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
+              src="techStack/other/blender.svg"
               alt="blender"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/ifttt/ifttt-ar21.svg"
+              src="techStack/other/ifttt.svg"
               alt="ifttt"
               width={imgSize}
               height={imgSize}
             />
             <img
               style={imgBg}
-              src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
+              src="techStack/other/illustrator.svg"
               alt="illustrator"
               width={imgSize}
               height={imgSize}
-            />
+            /> */}
           </p>
         </Grid>
       </Grid>
