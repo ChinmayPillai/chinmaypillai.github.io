@@ -62,7 +62,7 @@ const promiment_projects: Project[] = [
         des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
         date: "May-July 2023",
         link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
-        img: "/MERN.png",
+        img: "/MERN.jpg",
     },
     {
         title: "Speech Detection ML Model",
@@ -76,14 +76,14 @@ const promiment_projects: Project[] = [
         des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
         date: "Oct-Nov 2022",
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
-        img: "/Simulator.png",
+        img: "/Simulator.jpg",
     },
     {
         title: "React Typescript Portfolio Website",
         des: "This website which was made using React, Material UI and Bootstrap using Typescript",
         date: "June 2023 - Present",
         link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
-        img: "/Portfolio.png",
+        img: "/Portfolio.jpg",
     },
 ]
 
