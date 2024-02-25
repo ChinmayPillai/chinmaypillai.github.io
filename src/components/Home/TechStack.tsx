@@ -176,6 +176,13 @@ export default function TechStack() {
             />
             <img
               style={imgBg}
+              src="techStack/backend/django.svg"
+              alt="django"
+              width={imgSize}
+              height={imgSize}
+            />
+            <img
+              style={imgBg}
               src="techStack/backend/nginx.svg"
               alt="nginx"
               width={imgSize}
