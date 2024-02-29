@@ -50,9 +50,12 @@ const techData = [
     category: "Frontend Development",
     items: [
       { src: "techStack/frontend/react.svg", alt: "react" },
+      { src: "techStack/frontend/nextjs.svg", alt: "nextJs" },
       { src: "techStack/frontend/html.svg", alt: "html5" },
       { src: "techStack/frontend/css.svg", alt: "css3" },
+      { src: "techStack/frontend/tailwind.svg", alt: "tailwind" },
       { src: "techStack/frontend/bootstrap.svg", alt: "bootstrap" },
+      { src: "techStack/frontend/framer.svg", alt: "framer" },
     ],
   },
   {
