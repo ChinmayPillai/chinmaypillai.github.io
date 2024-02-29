@@ -16,7 +16,7 @@ const techData = [
   {
     category: "Programming Languages",
     items: [
-      { src: "techStack/progLang/cpp.svg", alt: "cplusplus" },
+      { src: "techStack/progLang/cpp2.svg", alt: "cplusplus" },
       { src: "techStack/progLang/c.svg", alt: "c" },
       { src: "techStack/progLang/python.svg", alt: "python" },
       { src: "techStack/progLang/typescript.svg", alt: "typescript" },
@@ -62,6 +62,7 @@ const techData = [
       { src: "techStack/database/mysql.svg", alt: "mysql" },
       { src: "techStack/database/postgresql.svg", alt: "postgresql" },
       { src: "techStack/database/redis.svg", alt: "redis" },
+      { src: "techStack/database/sqlite.svg", alt: "sqlite" },
     ],
   },
   {
