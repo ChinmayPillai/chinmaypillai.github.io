@@ -21,6 +21,8 @@ const techData = [
       { src: "techStack/progLang/python.svg", alt: "python" },
       { src: "techStack/progLang/typescript.svg", alt: "typescript" },
       { src: "techStack/progLang/javascript.svg", alt: "javascript" },
+      { src: "techStack/progLang/go.svg", alt: "go" },
+      { src: "techStack/progLang/solidity.svg", alt: "solidity" },
       { src: "techStack/progLang/java.svg", alt: "java" },
       { src: "techStack/progLang/csharp.svg", alt: "csharp" },
     ],
