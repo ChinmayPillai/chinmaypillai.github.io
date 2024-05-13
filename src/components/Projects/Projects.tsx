@@ -82,15 +82,15 @@ const promiment_projects: Project[] = [
         img: "/project/MERN.jpg",
     },
     {
-        title: "BlockPe - Blockchain based Cross-Border Contractual Payment System",
-        des: "Blockchain based DApp on Hyperledger Fabric with GoLang chaincode, TypeScript API and ReactJS",
+        title: "BlockPe - Blockchain Contractual Payments",
+        des: "Blockchain based DApp on Hyperledger Fabric using GoLang, TypeScript and ReactJS",
         date: "Mar-Apr 2024",
         link: "https://github.com/ChinmayPillai/Blockchain-Cross_Border_Contractual_Payments",
         img: "/project/BlockPe.jpg",
     },
     {
-        title: "Real-Estate Broker",
-        des: "Trading platform using Django, React & MySQL maintaining OrderBook updated with market & limit orders",
+        title: "Real-Estate Broker - Django,React,MySQL",
+        des: "Real-Estate trading platform maintaining OrderBook updated with market & limit orders",
         date: "Jan-Apr 2024",
         link: "https://github.com/ChinmayPillai/Real_Estate_Broker_WebApp",
         img: "/project/Broker.jpg",
@@ -113,7 +113,7 @@ type ProjMap = {
         "Speech Detection ML Model": SpeechDec,
         "Multi-Particle Gravity Simulator": Simulator,
         "React Typescript Portfolio Website": Portfolio,
-        "BlockPe - Blockchain based Cross-Border Contractual Payment System": BlockPe,
+        "BlockPe - Blockchain Contractual Payments": BlockPe,
         "Real-Estate Broker": Broker,
     };
     
