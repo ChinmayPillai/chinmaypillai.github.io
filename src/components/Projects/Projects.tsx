@@ -78,6 +78,7 @@ const promiment_projects: Project[] = [
         title: "MERN E-Commerce Web Application",
         des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
         date: "May-July 2023",
+        hostedLink: "https://ecom.chinmaypillai.com",
         link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
         img: "/project/MERN.jpg",
     },
