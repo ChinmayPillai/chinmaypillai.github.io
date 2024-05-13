@@ -8,6 +8,7 @@ import { titleStyle, bodyStyle } from './colors';
 import { useState, useContext, useEffect } from 'react';
 import { projContext } from '../Projects/Projects';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Props } from './ProjectCard';
 
 declare module '@mui/material/styles' {
@@ -115,7 +116,14 @@ export default function PromProjCard({project}: Props){
                         paddingRight: 1, // Adjust the padding as needed
                         }}
                     >
-                        <Button size="small" color="primary" sx={{ mb: 1 }} href={project.link ? project.link : "https://github.com/chinmaypillai" } target="_blank">
+                        {project.hostedLink ? (
+                            <Button size="small" color="primary" sx={{ mb: 1, px:0 }} href={project.hostedLink } target="_blank">
+                                <OpenInNewIcon sx={{ color: 'white' }} />
+                            </Button>
+                        ) : null
+                        }
+                        
+                        <Button size="small" color="primary" sx={{ mb: 1, px:0 }} href={project.link ? project.link : "https://github.com/chinmaypillai" } target="_blank">
                             <GitHubIcon sx={{ color: 'white' }} />
                         </Button>
                     </Box>
