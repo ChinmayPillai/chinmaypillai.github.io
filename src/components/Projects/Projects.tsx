@@ -78,7 +78,7 @@ const promiment_projects: Project[] = [
         title: "MERN E-Commerce Web Application",
         des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
         date: "May-July 2023",
-        link: "https://ecom.chinmaypillai.com",
+        link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
         img: "/project/MERN.jpg",
     },
     {
@@ -114,7 +114,7 @@ type ProjMap = {
         "Multi-Particle Gravity Simulator": Simulator,
         "React Typescript Portfolio Website": Portfolio,
         "BlockPe - Blockchain Contractual Payments": BlockPe,
-        "Real-Estate Broker": Broker,
+        "Real-Estate Broker - Django,React,MySQL": Broker,
     };
     
     
