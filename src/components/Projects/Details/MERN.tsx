@@ -42,6 +42,9 @@ export default function MERN() {
               Deployed on <span style={{ fontWeight: 'bold' }}>AWS EC2</span> using <span style={{ fontWeight: 'bold' }}>AWS Elastic Beanstalk</span> & <span style={{ fontWeight: 'bold' }}>GitHub Actions</span>{" "}
               for deployment, scaling & load balancing
             </li>
+            <li>
+              Implemented TLS encryption using <strong>SSL Certificate</strong> & custom-domain routing using <strong>AWS Route 53 & Hosted Zones</strong>
+            </li>
           </ul>
         </Typography>
       </ThemeProvider>
