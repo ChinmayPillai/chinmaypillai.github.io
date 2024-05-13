@@ -20,6 +20,7 @@ export type Project = {
     date?: string;
     link?: string;
     img?: string;
+    hostedLink?: string;
 };
   
 export interface Props {
