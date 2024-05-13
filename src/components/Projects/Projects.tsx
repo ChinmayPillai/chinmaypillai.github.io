@@ -4,6 +4,8 @@ import ProjectCard, { Project } from "../Utilities/ProjectCard";
 import { headingStyle } from "../Utilities/colors";
 import PromProjCard from "../Utilities/PromProjCard";
 import MERN from "./Details/MERN";
+import BlockPe from "./Details/BlockPe";
+import Broker from "./Details/Broker";
 import SpeechDec from "./Details/SpeechDec";
 import Simulator from "./Details/Simulator";
 import Portfolio from "./Details/Portfolio";
@@ -11,6 +13,21 @@ import Portfolio from "./Details/Portfolio";
 
 
 const ProjectList: Project[] = [
+
+    {
+        title: "Speech Detection ML Model",
+        des: "Neural-Network Model that detects all speech segments in audio using MFCC features",
+        date: "Oct-Nov 2023",
+        link: "https://github.com/ChinmayPillai/Speech-Detection",
+        img: "/project/Microphone2.jpg",
+    },
+    {
+        title: "React Typescript Portfolio Website",
+        des: "This website which was made using React, Material UI and Bootstrap using Typescript",
+        date: "June 2023 - Present",
+        link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
+        img: "/project/Portfolio.jpg",
+    },
     {
         title: "Singing Detection ML Model",
         des: "Neural-Network Model that detects segments in audio with singing voices using MFCC features",
@@ -41,18 +58,18 @@ const ProjectList: Project[] = [
         img: "/project/Focus.jpg",
     },
     {
-        title: "Blockchain Voting Smart Contract",
-        des: "Voting Smart Contract for Decentralised Blockchain using Solidity. IIT Kanpur Workshop",
-        date: "Mar 2023",
-        link: "https://github.com/ChinmayPillai/Blockchain-Voting-Smart-Contract",
-        img: "/project/Solidity.png",
-    },
-    {
         title: "BASH Image Processing",
         des: "BASH scripts to process/modify images from a microscope feed using imagemagik package",
         date: "Dec 2022",
         link: "https://github.com/ChinmayPillai/Image-Overlay-with-ImageMagick",
         img: "/project/BASH.jpg",
+    },
+    {
+        title: "Blockchain Voting Smart Contract",
+        des: "Voting Smart Contract for Decentralised Blockchain using Solidity. IIT Kanpur Workshop",
+        date: "Mar 2023",
+        link: "https://github.com/ChinmayPillai/Blockchain-Voting-Smart-Contract",
+        img: "/project/Solidity.png",
     },
 ]
 
@@ -61,15 +78,22 @@ const promiment_projects: Project[] = [
         title: "MERN E-Commerce Web Application",
         des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
         date: "May-July 2023",
-        link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
+        link: "https://ecom.chinmaypillai.com",
         img: "/project/MERN.jpg",
     },
     {
-        title: "Speech Detection ML Model",
-        des: "Neural-Network Model that detects all speech segments in audio using MFCC features",
-        date: "Oct-Nov 2023",
-        link: "https://github.com/ChinmayPillai/Speech-Detection",
-        img: "/project/Microphone2.jpg",
+        title: "BlockPe - Blockchain based Cross-Border Contractual Payment System",
+        des: "Blockchain based DApp on Hyperledger Fabric with GoLang chaincode, TypeScript API and ReactJS",
+        date: "Mar-Apr 2024",
+        link: "https://github.com/ChinmayPillai/Blockchain-Cross_Border_Contractual_Payments",
+        img: "/project/BlockPe.jpg",
+    },
+    {
+        title: "Real-Estate Broker",
+        des: "Trading platform using Django, React & MySQL maintaining OrderBook updated with market & limit orders",
+        date: "Jan-Apr 2024",
+        link: "https://github.com/ChinmayPillai/Real_Estate_Broker_WebApp",
+        img: "/project/Broker.jpg",
     },
     {
         title: "Multi-Particle Gravity Simulator",
@@ -77,13 +101,6 @@ const promiment_projects: Project[] = [
         date: "Oct-Nov 2022",
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
         img: "/project/Simulator.jpg",
-    },
-    {
-        title: "React Typescript Portfolio Website",
-        des: "This website which was made using React, Material UI and Bootstrap using Typescript",
-        date: "June 2023 - Present",
-        link: "https://github.com/ChinmayPillai/chinmaypillai.github.io",
-        img: "/project/Portfolio.jpg",
     },
 ]
 
@@ -96,6 +113,8 @@ type ProjMap = {
         "Speech Detection ML Model": SpeechDec,
         "Multi-Particle Gravity Simulator": Simulator,
         "React Typescript Portfolio Website": Portfolio,
+        "BlockPe - Blockchain based Cross-Border Contractual Payment System": BlockPe,
+        "Real-Estate Broker": Broker,
     };
     
     
