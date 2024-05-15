@@ -90,7 +90,7 @@ const promiment_projects: Project[] = [
         img: "/project/BlockPe.jpg",
     },
     {
-        title: "Real-Estate Broker - Django,React,MySQL",
+        title: "Real-Estate Broker - Django, React, MySql",
         des: "Real-Estate trading platform maintaining OrderBook updated with market & limit orders",
         date: "Jan-Apr 2024",
         link: "https://github.com/ChinmayPillai/Real_Estate_Broker_WebApp",
@@ -115,7 +115,7 @@ type ProjMap = {
         "Multi-Particle Gravity Simulator": Simulator,
         "React Typescript Portfolio Website": Portfolio,
         "BlockPe - Blockchain Contractual Payments": BlockPe,
-        "Real-Estate Broker - Django,React,MySQL": Broker,
+        "Real-Estate Broker - Django, React, MySql": Broker,
     };
     
     
