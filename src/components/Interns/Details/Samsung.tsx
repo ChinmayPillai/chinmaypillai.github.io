@@ -5,14 +5,14 @@ export default function Samsung(){
     return(
         <div>
             <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                Samsung
+                Samsung Reseach Institute - Bangalore
             </Typography>
 
             <ThemeProvider theme={projTextTheme}>
                 <Typography variant="h6" align="left" color={textColour}>
                     <ul>
                         <li>
-                            Upcoming Intern at Samsung Research Institute, Bangalore in Software Developer Role
+                            Ongoing MAGPIE Intern at SRIB in Software Developer Role
                         </li>
                     </ul>
                 </Typography>
