@@ -11,7 +11,7 @@ import { createContext } from "react";
 
 const InternList: Intern[] = [
   {
-    title: "SDE Summer Intern, Samsung Banglore",
+    title: "ML Research Intern, Samsung",
     des: "Upcoming Summer SDE Intern for SRI, Banglore",
     date: "May-July 2024",
     img: "/intern/Samsung.jpg",
