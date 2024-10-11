@@ -21,9 +21,20 @@ function About() {
                 {/* <h1 className="display-1">About Me</h1> */}
                 <Reveal>
                     <p className="text-center lead fs-5 fw-normal lh-base about ">
-                        I am an IIT Kanpur student pursuing a Double Major in Electrical Engineering + Physics,
-                        and a Minor in Machine Learning. Additionally,
-                        this, I'm a 2x National Medalist in Speed Skating.
+                        I'm an IIT Kanpur student pursuing a double major in Electrical Engineering + Physics.
+                        I've obtained a minor in Machine Learning and am currently pursuing another minor in Computer Systems. Additionally,
+                        I'm a 2x national medalist in speed skating.
+                    </p>
+                </Reveal>
+                <br />
+                <br />
+                <Reveal>
+                    <p className="text-center fs-5 fw-normal lh-base about ">
+                        I have always had a strong affinity for technology and computers. 
+                        I decided to double major in Electrical Engineering because I wanted to understand how the electronics around us 
+                        functioned and how to build fascinating things using them. 
+                        My passion for computer science led me to pursue several CS and ML courses during my degree, 
+                        as well as pursue a career in development, machine learning and devops.
                     </p>
                 </Reveal>
                 <br />
@@ -33,7 +44,7 @@ function About() {
                         I love to learn, improve myself and grow in all aspects that I can and
                         I'm interested in. I actively use the internet to learn things foreign
                         to me and improve upon those I already know a fair bit about. I explore
-                        and learn things that are Far and Wide outside the typical educational
+                        and learn things that are far and wide outside the typical educational
                         curriculum because I like to do so and, it helps me grow.
                     </p>
                 </Reveal>
@@ -47,7 +58,7 @@ function About() {
                         wonderful experiences, including both successes and failures, that I
                         experienced through this, and the incredibly wise, strong, and inspiring
                         people I met on the way, have played a massive role in making me the
-                        person I am today and have had a very positive impact on my
+                        person I am today. They have had a very positive impact on my
                         perspectives, something I am immensely grateful for. I love playing
                         sports in general and look forward to playing more.
                     </p>
