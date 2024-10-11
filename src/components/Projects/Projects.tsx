@@ -97,7 +97,7 @@ const promiment_projects: Project[] = [
         img: "/project/Broker.jpg",
     },
     {
-        title: "Multi-Particle Gravity Simulator",
+        title: "Solar System Simulator",
         des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
         date: "Oct-Nov 2022",
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
@@ -112,7 +112,7 @@ type ProjMap = {
     const projectMap: ProjMap = {
         "MERN E-Commerce Web Application": MERN,
         "Speech Detection ML Model": SpeechDec,
-        "Multi-Particle Gravity Simulator": Simulator,
+        "Solar System Simulator": Simulator,
         "React Typescript Portfolio Website": Portfolio,
         "BlockPe - Blockchain Contractual Payments": BlockPe,
         "Real-Estate Broker - Django, React, MySql": Broker,
