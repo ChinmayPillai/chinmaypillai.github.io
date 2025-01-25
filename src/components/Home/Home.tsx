@@ -11,7 +11,7 @@ theme = responsiveFontSizes(theme);
 function Home() {
 
     const [myPassions] = useTypewriter({
-        words: ["Full-Stack Web Dev.", "Machine Learning.", "Blockchain."],
+        words: ["Machine Learning.", "DevOps.", "Cloud Computing.", "Backend Development."],
         loop: true,
     })
 
