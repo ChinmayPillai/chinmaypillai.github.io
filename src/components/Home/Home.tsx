@@ -11,7 +11,7 @@ theme = responsiveFontSizes(theme);
 function Home() {
 
     const [myPassions] = useTypewriter({
-        words: ["Machine Learning.", "DevOps.", "Cloud Computing.", "Backend Development."],
+        words: ["Agentic AI.", "DevOps/Cloud Computing.", "Blockchain."],
         loop: true,
     })
 
@@ -61,12 +61,12 @@ function Home() {
                     </Grid>
                     <Grid item xs={12}  sx={{mb: 4}}>
                         <Typography variant="h6" align="justify" color={textColour} >
-                            I am a curious developer studying in IIT Kanpur
-                            with <span style={{ fontWeight: 'bold' }}>1.5 years</span> of
+                            I am a curious developer graduate of IIT Kanpur
+                            with <span style={{ fontWeight: 'bold' }}>2 years</span> of
                             internship experience in software. I have worked
-                            on <span style={{ fontWeight: 'bold' }}>Full Stack Web Applications,
-                            AI/ML Models, C++ Driver Development</span> and
-                            more during these internships. I am very passionate toward having a significant impact while learning
+                            on <span style={{ fontWeight: 'bold' }}>Agentic AI, ML Models, DevOps / Cloud Computing, 
+                            Full Stack Web Applications, C++ Driver Development</span> and
+                            more. I am very passionate toward having a significant impact while learning
                             and developing skills as much as possible.
                 
                         </Typography>

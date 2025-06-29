@@ -21,8 +21,8 @@ function About() {
                 {/* <h1 className="display-1">About Me</h1> */}
                 <Reveal>
                     <p className="text-center lead fs-5 fw-normal lh-base about ">
-                        I'm an IIT Kanpur student pursuing a double major in Electrical Engineering + Physics.
-                        I've obtained a minor in Machine Learning and am currently pursuing another minor in Computer Systems. Additionally,
+                        I'm an IIT Kanpur graduate with a double major in Electrical Engineering and Physics.
+                        I've obtained a minor in Machine Learning, Computer Systems, and Philosophy. Additionally,
                         I'm a 2x national medalist in speed skating.
                     </p>
                 </Reveal>
@@ -34,7 +34,7 @@ function About() {
                         I decided to double major in Electrical Engineering because I wanted to understand how the electronics around us 
                         functioned and how to build fascinating things using them. 
                         My passion for computer science led me to pursue several CS and ML courses during my degree, 
-                        as well as pursue a career in development, machine learning and devops.
+                        as well as pursue a career in development, artificial intelligece, DevOps, and Cloud Computing.
                     </p>
                 </Reveal>
                 <br />
