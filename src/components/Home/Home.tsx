@@ -1,5 +1,4 @@
 import DP from "./DP";
-import TechStack from "./TechStack";
 import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
 import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -70,7 +69,6 @@ function Home() {
                             and developing skills as much as possible.
                 
                         </Typography>
-                        <TechStack/>
                     </Grid>
                 
                 </Grid>

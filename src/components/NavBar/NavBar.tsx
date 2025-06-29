@@ -54,6 +54,11 @@ const NavItems: Item[] = [
         internal: true,
     },
     {
+        name: "Skills",
+        link: "/skills#",
+        internal: true,
+    },
+    {
         name: "About",
         link: "/about#",
         internal: true,
@@ -86,6 +91,7 @@ function NavBar() {
             data-bs-theme="dark"
             style={navStyle}
         >
+            {/* Logo */}
             <div className="container-fluid">
             <a className="navbar-brand" href="/#">
                 CP
@@ -101,15 +107,18 @@ function NavBar() {
             >
                 <span className="navbar-toggler-icon"></span>
             </button>
+            {/* Items */}
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
+                {/* Nav Items */}
                 {NavItems.map( (item, index) => (
                     <NavItem key={index} item={item} /> 
                 ) )}
+                {/* Dropdowns - Email and Socials */}
                 <DropDown title="Email" items={Emails} />
                 <DropDown title="Socials" items={Socials} />
                 </ul>
+                {/* Right Side Items - Github, LinkedIn, Resume */}
                 <ul className="navbar-nav d-flex">
                     <div className="d-flex align-items-center me-2">
                         <GitHubIcon sx={{ color: headingStyle }} />

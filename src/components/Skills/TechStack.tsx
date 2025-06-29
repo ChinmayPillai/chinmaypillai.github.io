@@ -17,13 +17,13 @@ const techData = [
     category: "Programming Languages",
     items: [
       { src: "techStack/progLang/cpp2.svg", alt: "cplusplus" },
-      { src: "techStack/progLang/c.svg", alt: "c" },
+      // { src: "techStack/progLang/c.svg", alt: "c" },
       { src: "techStack/progLang/python.svg", alt: "python" },
       { src: "techStack/progLang/typescript.svg", alt: "typescript" },
       { src: "techStack/progLang/javascript.svg", alt: "javascript" },
       { src: "techStack/progLang/go.svg", alt: "go" },
       { src: "techStack/progLang/solidity.svg", alt: "solidity" },
-      { src: "techStack/progLang/java.svg", alt: "java" },
+      // { src: "techStack/progLang/java.svg", alt: "java" },
       { src: "techStack/progLang/csharp.svg", alt: "csharp" },
     ],
   },
@@ -39,45 +39,45 @@ const techData = [
     ],
   },
   {
-    category: "Backend Development",
-    items: [
-      { src: "techStack/backend/node.svg", alt: "nodejs" },
-      { src: "techStack/backend/express.svg", alt: "express" },
-      { src: "techStack/backend/django.svg", alt: "django" },
-      { src: "techStack/backend/nginx.svg", alt: "nginx" },
-      { src: "techStack/backend/kafka.svg", alt: "kafka" },
-    ],
-  },
-  {
-    category: "Frontend Development",
-    items: [
-      { src: "techStack/frontend/react.svg", alt: "react" },
-      { src: "techStack/frontend/nextjs.svg", alt: "nextJs" },
-      { src: "techStack/frontend/html.svg", alt: "html5" },
-      { src: "techStack/frontend/css.svg", alt: "css3" },
-      { src: "techStack/frontend/tailwind.svg", alt: "tailwind" },
-      { src: "techStack/frontend/bootstrap.svg", alt: "bootstrap" },
-      { src: "techStack/frontend/framer.svg", alt: "framer" },
-    ],
-  },
-  {
-    category: "Database",
-    items: [
-      { src: "techStack/database/mongodb.svg", alt: "mongodb" },
-      { src: "techStack/database/mysql.svg", alt: "mysql" },
-      { src: "techStack/database/postgresql.svg", alt: "postgresql" },
-      { src: "techStack/database/redis.svg", alt: "redis" },
-      { src: "techStack/database/sqlite.svg", alt: "sqlite" },
-    ],
-  },
-  {
-    category: "DevOps",
+    category: "DevOps / Cloud",
     items: [
       { src: "techStack/devOps/docker.svg", alt: "docker" },
       { src: "techStack/devOps/aws.svg", alt: "aws" },
       { src: "techStack/devOps/linux.svg", alt: "linux" },
       { src: "techStack/devOps/git.svg", alt: "git" },
       { src: "techStack/devOps/bash.svg", alt: "bash" },
+    ],
+  },
+  {
+    category: "Backend Development",
+    items: [
+      { src: "techStack/backend/node.svg", alt: "nodejs" },
+      { src: "techStack/backend/express.svg", alt: "express" },
+      { src: "techStack/backend/django.svg", alt: "django" },
+      { src: "techStack/backend/nginx.svg", alt: "nginx" },
+      // { src: "techStack/backend/kafka.svg", alt: "kafka" },
+    ],
+  },
+  // {
+  //   category: "Frontend Development",
+  //   items: [
+  //     { src: "techStack/frontend/react.svg", alt: "react" },
+  //     { src: "techStack/frontend/nextjs.svg", alt: "nextJs" },
+  //     { src: "techStack/frontend/html.svg", alt: "html5" },
+  //     { src: "techStack/frontend/css.svg", alt: "css3" },
+  //     { src: "techStack/frontend/tailwind.svg", alt: "tailwind" },
+  //     { src: "techStack/frontend/bootstrap.svg", alt: "bootstrap" },
+  //     { src: "techStack/frontend/framer.svg", alt: "framer" },
+  //   ],
+  // },
+  {
+    category: "Database",
+    items: [
+      { src: "techStack/database/postgresql.svg", alt: "postgresql" },
+      { src: "techStack/database/redis.svg", alt: "redis" },
+      { src: "techStack/database/mongodb.svg", alt: "mongodb" },
+      { src: "techStack/database/mysql.svg", alt: "mysql" },
+      { src: "techStack/database/sqlite.svg", alt: "sqlite" },
     ],
   },
   // {
@@ -90,9 +90,9 @@ const techData = [
     category: "Other Software",
     items: [
       { src: "techStack/other/matlab.png", alt: "matlab" },
-      { src: "techStack/other/arduino.svg", alt: "arduino" },
       { src: "techStack/other/unity.svg", alt: "unity" },
-      { src: "techStack/other/photoshop.svg", alt: "photoshop" },
+      { src: "techStack/other/arduino.svg", alt: "arduino" },
+      // { src: "techStack/other/photoshop.svg", alt: "photoshop" },
     ],
   },
 ];
@@ -100,16 +100,16 @@ const techData = [
 export default function TechStack() {
   return (
     <div>
-      <Typography
+      {/* <Typography
         variant="h3"
         color={headingStyle}
         style={{ textAlign: "left" }}
         sx={{ textDecoration: "underline", mb: 2, mt: 5 }}
       >
         Tech Stack:
-      </Typography>
+      </Typography> */}
 
-      <Grid container spacing={2} sx={{ ml: 0.5 }}>
+      <Grid container spacing={2} sx={{ ml: 0.5, mt: 5, mb: 2 }}>
         {techData.map((categoryData, index) => (
           <Grid key={index} item xs={12} md={6}>
             <Typography
