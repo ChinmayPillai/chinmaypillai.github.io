@@ -43,7 +43,13 @@ const NavItems: Item[] = [
         name: "Home",
         link: "/#",
         internal: true,
-    },{
+    },
+    {
+        name: "Work",
+        link: "/work#",
+        internal: true,
+    },
+    {
         name: "Internships",
         link: "/interns#",
         internal: true,
