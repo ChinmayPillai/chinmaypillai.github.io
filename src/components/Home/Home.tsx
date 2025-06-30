@@ -2,10 +2,43 @@ import DP from "./DP";
 import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
 import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Pages from "./Pages";
+import { Item } from "../NavBar/Item";
 
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
+
+const items: Item[] = [
+    {
+        name: "My Work",
+        link: "/work#",
+        internal: true,
+        desc: "Read about my current work and imapacts I've made at Blitz.",
+        img: "/pages/blitz.png"
+    },
+    {
+        name: "My Internships",
+        link: "/interns#",
+        internal: true,
+        desc: "Read about my past internships, technologies I used, and the skills I developed.",
+        img: "/intern/Samsung.jpg"
+    },
+    {
+        name: "My Projects",
+        link: "/projects#",
+        internal: true,
+        desc: "View my projects from courses and personal exploration.",
+        img: "/project/MERN.jpg"
+    },
+    {
+        name: "My Skills and Courses",
+        link: "/skills#",
+        internal: true,
+        desc: "Explore my skills in programming languages, frameworks, and tools.",
+        img: "/pages/skills.jpg"
+    }
+];
 
 function Home() {
 
@@ -16,6 +49,8 @@ function Home() {
 
     const isScreenMediumPlus = useMediaQuery('(min-width: 700px)');
     const isScreenSmallPlus = useMediaQuery('(min-width: 400px)');
+
+
 
     return (
         <Container sx={{ mb: 7, mt: 5, minHeight: "100vh"}}>
@@ -70,7 +105,11 @@ function Home() {
                 
                         </Typography>
                     </Grid>
-                
+                    <Grid item xs={12}>
+                        {items.map( (item, index) => (
+                            <Pages key={index} item={item} /> 
+                        ) )}
+                    </Grid>
                 </Grid>
             </ThemeProvider>
         </Container>
