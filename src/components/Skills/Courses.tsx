@@ -1,5 +1,5 @@
 import { Grid, Typography,} from "@mui/material";
-import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
+import { textColour } from "../Utilities/colors";
 
 
 type courseType = {

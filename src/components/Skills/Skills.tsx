@@ -1,6 +1,6 @@
 import TechStack from "./TechStack";
-import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
-import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
+import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material";
+import { headingStyle, textColour } from "../Utilities/colors";
 import Courses from "./Courses";
 
 

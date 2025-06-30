@@ -1,6 +1,5 @@
-import Blitz from "./BlitzImage";
 import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
-import { headingStyle, textColour, highlightColour } from "../Utilities/colors";
+import { headingStyle, textColour } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BlitzImage from "./BlitzImage";
 
