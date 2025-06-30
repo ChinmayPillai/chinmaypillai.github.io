@@ -29,7 +29,7 @@ function Work() {
                             </Typography>
                             <Typography variant={isScreenSmallPlus ? "h5" : "h6"} align="left" color={textColour}>
                                 <span style={{ whiteSpace: "nowrap" }}>
-                                    {"A tech driven startup innovating the Indian logistics industry"}
+                                    {"A tech driven startup innovating the Indian logistics industry."}
                                 </span>
                             </Typography>
                         </div>
@@ -53,10 +53,12 @@ function Work() {
                         <Typography variant="h6" align="justify" color={textColour} >
                             I am currently working at Blitz as a Software Engineer, directly under the CTO. I work primarily on Agentic AI and Cloud Computing with good amound of DevOps involved in deploying and maintaining my projects.
                             <br />
+                            <br />
                             I have made a LangGraph Chatbot, Livekit Agentic Caller, automated payment verifination using OCR, worked on revenue automation and other projects.
                             <br />
                             My chatbot has aroundd 1500 conversation per day and my CoD automation has saved hundreds of hours of manual work.
                             <br />  
+                            <br />
                             To deploy my projects, I use AWS services like Lambda, ECS & ECR, SQS & SNS, S3, Route 53, EventBridge, IAM, Secrets Manager, Cloudwatch and more.             
                         </Typography>
                     </Grid>

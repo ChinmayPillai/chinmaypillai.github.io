@@ -41,7 +41,7 @@ export default function Courses(){
             </Grid>
             {courseList.map((courseCategory, index) => (
                 <Grid key={index} item sx={{ml: 2}} md={5}>
-                        <Typography variant="h5" align="justify" color={textColour}>
+                        <Typography variant="h4" align="justify" color={textColour}>
                             {courseCategory.name}:
                         </Typography>
                         <Typography variant="h6" align="justify" color={textColour}>

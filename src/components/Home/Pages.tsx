@@ -3,13 +3,14 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Item } from '../NavBar/Item';
 import { useState } from 'react';
 import { titleStyle, bodyStyle } from '../Utilities/colors';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 interface Props {
   item: Item;
 }
 
 const gradientColors = [
-    ['#2A6F97', '#014F86'], // Initial gradient
+    ['#103783', '#014F86'], // Initial gradient
     ['#1282A2', '#00BFFF'], // Hover gradient
     ['#1282A2', '#06d6a0'], // Click gradient
     // ['#1282A2', '#00BFFF'], // Initial gradient
@@ -64,7 +65,8 @@ export default function Pages({ item }: Props){
             {/* Text on left */}
             <Box sx={{ flex: 1 }}>
               <Typography variant="h5" color={titleStyle} component="div" sx={{ mb: 1 }}>
-                {item.name}
+                {item.name + " "}
+                <OpenInNewIcon sx={{color: titleStyle, fontSize: 20}} />
               </Typography>
               <Typography variant="body2" color={bodyStyle}>
                 {item.desc}
