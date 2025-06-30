@@ -109,7 +109,7 @@ export default function TechStack() {
         Tech Stack:
       </Typography> */}
 
-      <Grid container spacing={2} sx={{ ml: 0.5, mt: 5, mb: 2 }}>
+      <Grid container spacing={2} sx={{ ml: 0.5, mt: 1, mb: 2 }}>
         {techData.map((categoryData, index) => (
           <Grid key={index} item xs={12} md={6}>
             <Typography
