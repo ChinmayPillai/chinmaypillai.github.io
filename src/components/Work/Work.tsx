@@ -50,15 +50,15 @@ function Work() {
                     </Grid>
                     <Grid item xs={12}  sx={{mb: 4}}>
                         <Typography variant="h6" align="justify" color={textColour} >
-                            I am currently working at Blitz as a Software Engineer, directly under the CTO. I work primarily on Agentic AI and Cloud Computing with good amound of DevOps involved in deploying and maintaining my projects.
+                            I am currently working at Blitz as a Software Engineer under the CTO. I work primarily on Agentic AI and Cloud Computing with good amount of DevOps involved in deploying and maintaining my projects.
                             <br />
                             <br />
-                            I have made a LangGraph Chatbot, Livekit Agentic Caller, automated payment verifination using OCR, worked on revenue automation and other projects.
+                            I have made a Livekit Agentic Caller, LangGraph Chatbot, automated payment verification using OCR, worked on revenue automation and other projects.
                             <br />
-                            My chatbot has aroundd 1500 conversation per day and my CoD automation has saved hundreds of hours of manual work.
-                            <br />  
+                            My voice agent conducts 4000+ calls per day to confirm customer requirements and act on it, my AI chatbot has around 1500 conversations per day to address customer concerns and raise escalations, and my CoD automation has saved hundreds of hours of manual work.
                             <br />
-                            To deploy my projects, I use AWS services like Lambda, ECS & ECR, SQS & SNS, S3, Route 53, EventBridge, IAM, Secrets Manager, Cloudwatch and more.             
+                            <br />
+                            To deploy my projects, I use AWS services like Lambda, ECS & ECR, SQS & SNS, OpenSearch, S3, Route 53, EventBridge, IAM, Secrets Manager, Cloudwatch and more.             
                         </Typography>
                     </Grid>
                 

@@ -87,6 +87,11 @@ const Resume = {
     //link: "https://drive.google.com/file/d/1UQvnG2s63d0hqeoBAcKeOfTJZoC1asLw/view?usp=drive_link"
 };
 
+const Blog = {
+    name: "My Tech Blog",
+    link: "https://blog.chinmaypillai.com",
+}
+
 function NavBar() {
 
 
@@ -126,6 +131,10 @@ function NavBar() {
                 </ul>
                 {/* Right Side Items - Github, LinkedIn, Resume */}
                 <ul className="navbar-nav d-flex">
+                    <div className="d-flex align-items-center">
+                        <OpenInNewIcon sx={{ color: headingStyle }} />
+                        <NavItem item={Blog}/>
+                    </div>
                     <div className="d-flex align-items-center me-2">
                         <GitHubIcon sx={{ color: headingStyle }} />
                         <NavItem item={GitHub} />
