@@ -7,20 +7,24 @@ import Projects from "./components/Projects/Projects";
 import Test from "./components/Home/Test";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import ScrollToTop from "./components/Utilities/ScrollToTop";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<NavBar />}>
-        <Route index element={<Home />} />
-        <Route path="work" element={<Work />} />
-        <Route path="interns" element={<Interns />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="test" element={<Test />} />
-        <Route path="about" element={<About />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route index element={<Home />} />
+          <Route path="work" element={<Work />} />
+          <Route path="interns" element={<Interns />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="test" element={<Test />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
