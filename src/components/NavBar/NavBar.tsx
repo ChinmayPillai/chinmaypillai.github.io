@@ -128,7 +128,31 @@ function NavBar() {
 
   return (
     <>
+      <Box
+        component="a"
+        href="#main-content"
+        sx={{
+          position: "absolute",
+          left: 8,
+          top: 8,
+          zIndex: (t) => t.zIndex.appBar + 1,
+          padding: "8px 16px",
+          backgroundColor: tokens.accent,
+          color: tokens.bg.base,
+          fontWeight: 600,
+          fontSize: 14,
+          borderRadius: 1,
+          textDecoration: "none",
+          transform: "translateY(-200%)",
+          transition: "transform 150ms ease-out",
+          "&:focus": { transform: "translateY(0)" },
+        }}
+      >
+        Skip to content
+      </Box>
       <AppBar
+        component="nav"
+        aria-label="Primary navigation"
         position="sticky"
         elevation={0}
         sx={{
@@ -316,7 +340,14 @@ function NavBar() {
         </List>
       </Drawer>
 
-      <Outlet />
+      <Box
+        component="main"
+        id="main-content"
+        tabIndex={-1}
+        sx={{ outline: "none" }}
+      >
+        <Outlet />
+      </Box>
     </>
   );
 }
