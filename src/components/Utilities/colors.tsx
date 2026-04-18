@@ -1,5 +1,3 @@
-import { createTheme } from "@mui/material";
-
 export const tokens = {
   bg: {
     base: "#0B0F19",
@@ -31,17 +29,3 @@ export const tokens = {
     default: "200ms cubic-bezier(0.2, 0.8, 0.2, 1)",
   },
 } as const;
-
-// Backwards-compat named exports — kept while legacy pages still
-// import them. Removed once all consumers migrate to `tokens`.
-export const navStyle = { backgroundColor: tokens.bg.surface };
-export const navItemStyle = {};
-export const headingStyle = tokens.text.heading;
-export const titleStyle = tokens.text.heading;
-export const bodyStyle = tokens.text.secondary;
-export const textColour = tokens.text.primary;
-export const highlightColour = tokens.accent;
-
-export const projTextTheme = createTheme({
-  typography: { fontSize: 17 },
-});
