@@ -1,71 +1,62 @@
-import { Container, Grid, Typography, createTheme, ThemeProvider, responsiveFontSizes, useMediaQuery } from "@mui/material";
-import { headingStyle, textColour } from "../Utilities/colors";
+import { Container, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
+import { tokens } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BlitzImage from "./BlitzImage";
 
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
-
 function Work() {
+  const [myWork] = useTypewriter({
+    words: ["Agentic AI.", "AWS.", "DevOps."],
+    loop: true,
+  });
 
-    const [myWork] = useTypewriter({
-        words: ["Agentic AI.", "AWS.", "DevOps."],
-        loop: true,
-    })
+  const isScreenMediumPlus = useMediaQuery("(min-width: 700px)");
 
-    const isScreenMediumPlus = useMediaQuery('(min-width: 700px)');
-    const isScreenSmallPlus = useMediaQuery('(min-width: 400px)');
-
-    return (
-        <Container sx={{ mb: 7, mt: 5, minHeight: "100vh"}}>
-            <ThemeProvider theme={theme}>
-                <Grid container sx={{ mb: 2, mt: 1 }}>
-                    <Grid item xs={10}sx={{ mt: 1}}>
-                        <div className="mt-2 mb-2">
-                            <Typography variant={isScreenSmallPlus ? "h1" : "h2"} align="left" color={headingStyle} sx={{mb:1, whiteSpace: "nowrap"}}>
-                                Blitz
-                            </Typography>
-                            <Typography variant={isScreenSmallPlus ? "h5" : "h6"} align="left" color={textColour}>
-                                <span style={{ whiteSpace: "nowrap" }}>
-                                    {"A tech driven startup innovating the Indian logistics industry."}
-                                </span>
-                            </Typography>
-                        </div>
-                
-                    </Grid>
-                    {isScreenMediumPlus ? (<Grid item xs={2} sx={{ mt: 1 }}>
-                        <BlitzImage />
-                    </Grid>) : null }
-                    <Grid item xs={12}>
-                        <Typography variant={isScreenSmallPlus ? "h4" : "h5"} align="left" color={headingStyle} sx={{ mb: 2}}>
-                            {"I work on "}
-                            <span style={{fontWeight: "bold", color: "#06d6a0"}}>
-                                {myWork}
-                            </span>
-                            <span style={{color: "white"}}>
-                                <Cursor />
-                            </span>
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}  sx={{mb: 4}}>
-                        <Typography variant="h6" align="justify" color={textColour} >
-                            I am currently working at Blitz as a Software Engineer under the CTO. I work primarily on Agentic AI and Cloud Computing with good amount of DevOps involved in deploying and maintaining my projects.
-                            <br />
-                            <br />
-                            I have made a Livekit Agentic Caller, LangGraph Chatbot, automated payment verification using OCR, worked on revenue automation and other projects.
-                            <br />
-                            My voice agent conducts 4000+ calls per day to confirm customer requirements and act on it, my AI chatbot has around 1500 conversations per day to address customer concerns and raise escalations, and my CoD automation has saved hundreds of hours of manual work.
-                            <br />
-                            <br />
-                            To deploy my projects, I use AWS services like Lambda, ECS & ECR, SQS & SNS, OpenSearch, S3, Route 53, EventBridge, IAM, Secrets Manager, Cloudwatch and more.             
-                        </Typography>
-                    </Grid>
-                
-                </Grid>
-            </ThemeProvider>
-        </Container>
-    );
+  return (
+    <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
+        <Grid item xs={isScreenMediumPlus ? 9 : 12}>
+          <Typography variant="h1" sx={{ mb: 1 }}>
+            Blitz
+          </Typography>
+          <Typography variant="h5" color="text.secondary">
+            A tech-driven startup innovating the Indian logistics industry.
+          </Typography>
+        </Grid>
+        {isScreenMediumPlus && (
+          <Grid item xs={3} sx={{ display: "flex", justifyContent: "flex-end" }}>
+            <BlitzImage />
+          </Grid>
+        )}
+        <Grid item xs={12}>
+          <Typography variant="h4" color="text.primary">
+            I work on{" "}
+            <Typography component="span" variant="inherit" color="primary.main" sx={{ fontWeight: 600 }}>
+              {myWork}
+            </Typography>
+            <Typography component="span" variant="inherit" sx={{ color: tokens.text.secondary }}>
+              <Cursor />
+            </Typography>
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Stack spacing={2}>
+            <Typography variant="body1" color="text.primary">
+              I am currently working at Blitz as a Software Engineer under the CTO. I work primarily on Agentic AI and Cloud Computing with a good amount of DevOps involved in deploying and maintaining my projects.
+            </Typography>
+            <Typography variant="body1" color="text.primary">
+              I have built a Livekit Agentic Caller, a LangGraph chatbot, automated payment verification using OCR, and worked on revenue automation among other projects.
+            </Typography>
+            <Typography variant="body1" color="text.primary">
+              My voice agent conducts <strong style={{ color: tokens.accent }}>4000+ calls per day</strong> to confirm customer requirements and act on them. My AI chatbot handles around <strong style={{ color: tokens.accent }}>1500 conversations per day</strong> to address customer concerns and raise escalations. My CoD automation has saved hundreds of hours of manual work.
+            </Typography>
+            <Typography variant="body1" color="text.primary">
+              To deploy my projects I use AWS services including Lambda, ECS &amp; ECR, SQS &amp; SNS, OpenSearch, S3, Route 53, EventBridge, IAM, Secrets Manager, and CloudWatch.
+            </Typography>
+          </Stack>
+        </Grid>
+      </Grid>
+    </Container>
+  );
 }
 
 export default Work;

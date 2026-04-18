@@ -1,11 +1,20 @@
+import { Box } from "@mui/material";
+import { tokens } from "../Utilities/colors";
+
 function BlitzImage() {
   return (
-    <img
+    <Box
+      component="img"
       src="/blitz.jpg"
-      className="rounded float-end mt-2 border border-1 border-dark-subtle centre"
-      alt="Couldn't Load Image :("
-      style={{ width: "100%", height: "auto" }}
-    ></img>
+      alt="Blitz logo"
+      sx={{
+        width: "100%",
+        height: "auto",
+        borderRadius: 2,
+        border: "1px solid",
+        borderColor: tokens.border.subtle,
+      }}
+    />
   );
 }
 

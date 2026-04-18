@@ -1,35 +1,34 @@
 import { Link } from "react-router-dom";
-import { navItemStyle } from "../Utilities/colors";
-
-export type Item = {
-  name: string;
-  link: string;
-  internal?: boolean;
-  desc?: string;
-  img?: string;
-};
+import { tokens } from "../Utilities/colors";
+import type { Item } from "./types";
 
 interface Props {
   item: Item;
 }
 
-export function NavItem({ item }: Props) {
+const linkStyle = { color: tokens.text.primary };
 
+export function NavItem({ item }: Props) {
   if (item.internal) {
     return (
       <li className="nav-item">
-        <Link className="nav-link" to={item.link} style={navItemStyle}>
+        <Link className="nav-link" to={item.link} style={linkStyle}>
           {item.name}
         </Link>
       </li>
     );
-  } else {
-    return (
-      <li className="nav-item">
-        <a className="nav-link" target="_blank" href={item.link} style={navItemStyle}>
-          {item.name}
-        </a>
-      </li>
-    );
   }
+  return (
+    <li className="nav-item">
+      <a
+        className="nav-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={item.link}
+        style={linkStyle}
+      >
+        {item.name}
+      </a>
+    </li>
+  );
 }

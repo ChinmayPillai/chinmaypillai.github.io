@@ -1,19 +1,18 @@
-import { Container, Grid, Typography } from "@mui/material";
-import { createContext, useState } from "react";
-import ProjectCard, { Project } from "../Utilities/ProjectCard";
-import { headingStyle } from "../Utilities/colors";
-import PromProjCard from "../Utilities/PromProjCard";
+import { Container, Grid, Typography, IconButton } from "@mui/material";
+import { useState } from "react";
+import SurfaceCard from "../Utilities/SurfaceCard";
+import type { Project } from "../Utilities/types";
 import MERN from "./Details/MERN";
 import BlockPe from "./Details/BlockPe";
 import Broker from "./Details/Broker";
 import SpeechDec from "./Details/SpeechDec";
 import Simulator from "./Details/Simulator";
 import Portfolio from "./Details/Portfolio";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 
 const ProjectList: Project[] = [
-
     {
         title: "Speech Detection ML Model",
         des: "Neural-Network Model that detects all speech segments in audio using MFCC features",
@@ -37,8 +36,7 @@ const ProjectList: Project[] = [
     },
     {
         title: "Stroke Detection & Clustering ML Model",
-        des: "Neural-Network + K-Means Clustering Model that detects & \
-              clusters different musical instrument strokes",
+        des: "Neural-Network + K-Means Clustering Model that detects & clusters different musical instrument strokes",
         date: "Oct-Nov 2023",
         link: "https://github.com/ChinmayPillai/Stroke-Detection-and-Clustering",
         img: "/project/Onset.jpg",
@@ -71,7 +69,7 @@ const ProjectList: Project[] = [
         link: "https://github.com/ChinmayPillai/Blockchain-Voting-Smart-Contract",
         img: "/project/Solidity.png",
     },
-]
+];
 
 const promiment_projects: Project[] = [
     {
@@ -103,74 +101,98 @@ const promiment_projects: Project[] = [
         link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
         img: "/project/Simulator.jpg",
     },
-]
+];
 
-type ProjMap = {
-        [key: string]: React.FC; // or React.ComponentType, depending on your components
-    };
-    
-    const projectMap: ProjMap = {
-        "MERN E-Commerce Web Application": MERN,
-        "Speech Detection ML Model": SpeechDec,
-        "Solar System Simulator": Simulator,
-        "React Typescript Portfolio Website": Portfolio,
-        "BlockPe - Blockchain Contractual Payments": BlockPe,
-        "Real-Estate Broker - Django, React, MySql": Broker,
-    };
-    
-    
-    export const projContext = createContext<string>("MERN E-Commerce Web Application")
+type ProjMap = { [key: string]: React.FC };
+
+const projectMap: ProjMap = {
+    "MERN E-Commerce Web Application": MERN,
+    "Speech Detection ML Model": SpeechDec,
+    "Solar System Simulator": Simulator,
+    "React Typescript Portfolio Website": Portfolio,
+    "BlockPe - Blockchain Contractual Payments": BlockPe,
+    "Real-Estate Broker - Django, React, MySql": Broker,
+};
+
 
 function Projects() {
-
-    
     const [project, setProject] = useState<string>("MERN E-Commerce Web Application");
-
-
-    const ProjectDetail = projectMap[project]
-
-    function handleClick(name: string){
-        setProject(name)
-    }
-    
+    const ProjectDetail = projectMap[project];
 
     return (
-        <Container sx={{ mb: 10, minHeight: "100vh"}}>
+        <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
                 <Grid item xs={12}>
-                    <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                    <Typography variant="h2" align="center" sx={{ mb: 2 }}>
                         Prominent Projects
                     </Typography>
                 </Grid>
 
                 {promiment_projects.map((proj) => (
-                    <projContext.Provider value={project}>
-                        <Grid item xs={6} md={3} onClick={() => handleClick(proj.title)}>
-                            <PromProjCard project={proj} />
-                        </Grid>
-                    </projContext.Provider>
+                    <Grid key={proj.title} item xs={6} md={3}>
+                        <SurfaceCard
+                            selected={project === proj.title}
+                            onClick={() => setProject(proj.title)}
+                            media={proj.img ? { src: proj.img, alt: proj.title, aspect: "video" } : undefined}
+                            title={proj.title}
+                            subtitle={proj.date}
+                            description={proj.des}
+                            actions={
+                                <>
+                                    {proj.hostedLink && (
+                                        <IconButton
+                                            size="small"
+                                            href={proj.hostedLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`${proj.title} live site`}
+                                            sx={{ color: "text.secondary", "&:hover": { color: "primary.main" } }}
+                                        >
+                                            <OpenInNewIcon fontSize="small" />
+                                        </IconButton>
+                                    )}
+                                    <IconButton
+                                        size="small"
+                                        href={proj.link ?? "https://github.com/chinmaypillai"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${proj.title} on GitHub`}
+                                        sx={{ color: "text.secondary", "&:hover": { color: "primary.main" } }}
+                                    >
+                                        <GitHubIcon fontSize="small" />
+                                    </IconButton>
+                                </>
+                            }
+                        />
+                    </Grid>
                 ))}
 
-                <Grid item xs={12} sx={{ m: 4 }} >
-                    <ProjectDetail/>
+                <Grid item xs={12} sx={{ m: 4 }}>
+                    <ProjectDetail />
                 </Grid>
             </Grid>
 
             <Grid container spacing={2} sx={{ mb: 2, mt: 2 }}>
                 <Grid item xs={12}>
-                    <Typography variant="h2" align="center" color={headingStyle} sx={{ mb: 2 }}>
+                    <Typography variant="h2" align="center" sx={{ mb: 2 }}>
                         Other Projects
                     </Typography>
                 </Grid>
 
-                {ProjectList.map((project) => (
-                    <Grid item xs={12} sm={6} sx={{mb:2}}>
-                        <ProjectCard project={project} />
+                {ProjectList.map((proj) => (
+                    <Grid key={proj.title} item xs={12} sm={6} sx={{ mb: 2 }}>
+                        <SurfaceCard
+                            href={proj.link ?? "https://github.com/chinmaypillai"}
+                            media={proj.img ? { src: proj.img, alt: proj.title, aspect: "video" } : undefined}
+                            title={proj.title}
+                            subtitle={proj.date}
+                            description={proj.des}
+                        />
                     </Grid>
                 ))}
             </Grid>
         </Container>
-  );
+    );
 }
 
 export default Projects;
