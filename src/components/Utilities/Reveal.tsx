@@ -16,7 +16,7 @@ export const Reveal = ({children} : Props) => {
         if(inView){
             motionControls.start("visible");
         }
-    }, [inView]);
+    }, [inView, motionControls]);
     
     return(
         <div ref={ref}>
