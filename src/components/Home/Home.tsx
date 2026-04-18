@@ -11,28 +11,28 @@ const items: Item[] = [
     link: "/work",
     internal: true,
     desc: "Read about my current work and impacts I've made at Blitz.",
-    img: "/pages/blitz.png",
+    img: "/pages/blitz.webp",
   },
   {
     name: "My Internships",
     link: "/interns",
     internal: true,
     desc: "Read about my past internships, technologies I used, and the skills I developed.",
-    img: "/intern/Samsung.jpg",
+    img: "/intern/Samsung.webp",
   },
   {
     name: "My Projects",
     link: "/projects",
     internal: true,
     desc: "View my projects from courses and personal exploration.",
-    img: "/project/MERN.jpg",
+    img: "/project/MERN.webp",
   },
   {
     name: "My Skills and Courses",
     link: "/skills",
     internal: true,
     desc: "Explore my skills in programming languages, frameworks, and tools.",
-    img: "/pages/skills.jpg",
+    img: "/pages/skills.webp",
   },
 ];
 

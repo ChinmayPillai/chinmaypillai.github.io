@@ -5,8 +5,9 @@ function BlitzImage() {
   return (
     <Box
       component="img"
-      src="/blitz.jpg"
+      src="/blitz.webp"
       alt="Blitz logo"
+      decoding="async"
       sx={{
         width: "100%",
         height: "auto",

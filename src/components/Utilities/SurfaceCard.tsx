@@ -99,6 +99,8 @@ export default function SurfaceCard({
           component="img"
           image={media.src}
           alt={media.alt}
+          loading="lazy"
+          decoding="async"
           sx={
             isHorizontal
               ? {

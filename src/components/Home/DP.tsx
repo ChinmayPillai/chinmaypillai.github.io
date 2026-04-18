@@ -5,8 +5,9 @@ function DP() {
   return (
     <Box
       component="img"
-      src="/DP.jpg"
+      src="/DP.webp"
       alt="Chinmay Pillai"
+      decoding="async"
       sx={{
         width: "100%",
         height: "auto",
