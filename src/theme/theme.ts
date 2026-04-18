@@ -56,8 +56,45 @@ let theme = createTheme({
       },
     },
     MuiButton: {
+      defaultProps: { disableFocusRipple: true },
       styleOverrides: {
-        root: { textTransform: "none", boxShadow: "none" },
+        root: {
+          textTransform: "none",
+          boxShadow: "none",
+          transition: tokens.transition.default,
+          "&:hover": {
+            backgroundColor: "rgba(45,212,191,0.06)",
+            color: tokens.accent,
+          },
+          "&.Mui-focusVisible": {
+            outline: `2px solid ${tokens.accent}`,
+            outlineOffset: 2,
+            backgroundColor: "transparent",
+          },
+        },
+      },
+    },
+    MuiIconButton: {
+      defaultProps: { disableFocusRipple: true },
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            backgroundColor: "rgba(45,212,191,0.06)",
+            color: tokens.accent,
+          },
+          "&.Mui-focusVisible": {
+            outline: `2px solid ${tokens.accent}`,
+            outlineOffset: 2,
+            backgroundColor: "transparent",
+          },
+        },
+      },
+    },
+    MuiTouchRipple: {
+      styleOverrides: {
+        child: {
+          backgroundColor: tokens.accent,
+        },
       },
     },
     MuiContainer: {

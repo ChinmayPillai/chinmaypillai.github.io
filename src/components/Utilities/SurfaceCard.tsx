@@ -152,6 +152,7 @@ export default function SurfaceCard({
       {interactive ? (
         <CardActionArea
           {...linkProps}
+          disableRipple
           sx={{
             flex: 1,
             alignItems: "stretch",
