@@ -3,6 +3,7 @@ import { Container, Grid, Stack, Typography, useMediaQuery } from "@mui/material
 import { tokens } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import SurfaceCard from "../Utilities/SurfaceCard";
+import PageMeta from "../Utilities/PageMeta";
 import type { Item } from "../NavBar/types";
 
 const items: Item[] = [
@@ -46,6 +47,10 @@ function Home() {
 
   return (
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <PageMeta
+        title="Chinmay Pillai"
+        description="Portfolio of Chinmay Pillai — developer from IIT Kanpur working on Agentic AI, Cloud, DevOps, and Full-Stack."
+      />
       <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
         <Grid item xs={isScreenMediumPlus ? 9 : 12}>
           <Typography variant="h4" color="text.secondary" sx={{ mb: 0.5 }}>

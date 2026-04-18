@@ -2,6 +2,7 @@ import { Container, Grid, Stack, Typography, useMediaQuery } from "@mui/material
 import { tokens } from "../Utilities/colors";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BlitzImage from "./BlitzImage";
+import PageMeta from "../Utilities/PageMeta";
 
 function Work() {
   const [myWork] = useTypewriter({
@@ -13,6 +14,10 @@ function Work() {
 
   return (
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <PageMeta
+        title="Work"
+        description="Software Engineer at Blitz building Agentic AI voice/chat agents and AWS-deployed automation."
+      />
       <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
         <Grid item xs={isScreenMediumPlus ? 9 : 12}>
           <Typography variant="h1" sx={{ mb: 1 }}>

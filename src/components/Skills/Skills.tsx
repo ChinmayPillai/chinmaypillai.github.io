@@ -1,10 +1,15 @@
 import TechStack from "./TechStack";
 import { Container, Stack, Typography } from "@mui/material";
 import Courses from "./Courses";
+import PageMeta from "../Utilities/PageMeta";
 
 function Skills() {
   return (
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <PageMeta
+        title="Skills & Courses"
+        description="Programming languages, AI/ML, DevOps/Cloud, backend and database technologies plus IIT Kanpur coursework."
+      />
       <Typography variant="h2" align="center" sx={{ mb: 4 }}>
         Skills and Courses
       </Typography>

@@ -1,6 +1,7 @@
 import { Container, Grid, Typography, IconButton } from "@mui/material";
 import { useState } from "react";
 import SurfaceCard from "../Utilities/SurfaceCard";
+import PageMeta from "../Utilities/PageMeta";
 import type { Project } from "../Utilities/types";
 import MERN from "./Details/MERN";
 import BlockPe from "./Details/BlockPe";
@@ -121,6 +122,10 @@ function Projects() {
 
     return (
         <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+            <PageMeta
+                title="Projects"
+                description="Projects by Chinmay Pillai across MERN, blockchain, ML, raytracing, and microscope automation."
+            />
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
                 <Grid item xs={12}>
                     <Typography variant="h2" align="center" sx={{ mb: 2 }}>

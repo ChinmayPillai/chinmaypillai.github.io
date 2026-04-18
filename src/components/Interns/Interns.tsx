@@ -1,5 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import SurfaceCard from "../Utilities/SurfaceCard";
+import PageMeta from "../Utilities/PageMeta";
 import type { Intern } from "../Utilities/types";
 import { useState } from "react";
 import Samsung from "./Details/Samsung";
@@ -55,6 +56,10 @@ function Interns() {
 
   return (
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <PageMeta
+        title="Internships"
+        description="Past internships of Chinmay Pillai at Samsung, ACL Digital, IIT Kanpur and Quazar Technologies."
+      />
       <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
         <Grid item xs={12}>
           <Typography variant="h2" align="center" sx={{ mb: 2 }}>

@@ -1,5 +1,6 @@
 import { Container, Stack, Typography } from "@mui/material";
 import { Reveal } from "../Utilities/Reveal";
+import PageMeta from "../Utilities/PageMeta";
 
 const paragraphs = [
   "I'm an IIT Kanpur graduate with a double major in Electrical Engineering and Physics. I've obtained a minor in Machine Learning, Computer Systems, and Philosophy. Additionally, I'm a 2× national medalist in speed skating.",
@@ -13,6 +14,10 @@ const paragraphs = [
 function About() {
   return (
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
+      <PageMeta
+        title="About"
+        description="About Chinmay Pillai — IIT Kanpur graduate, developer, 2× national medalist in speed skating, Rubik's cube enthusiast."
+      />
       <Reveal>
         <Typography variant="h2" align="center" sx={{ mb: 4 }}>
           About Me
