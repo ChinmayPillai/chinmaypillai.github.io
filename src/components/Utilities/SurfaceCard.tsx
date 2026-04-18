@@ -156,8 +156,13 @@ export default function SurfaceCard({
             flex: 1,
             alignItems: "stretch",
             display: "flex",
+            borderRadius: `${tokens.radius.card}px`,
             "& .MuiCardActionArea-focusHighlight": { opacity: 0 },
             "&:hover .MuiCardActionArea-focusHighlight": { opacity: 0 },
+            "&:focus-visible": {
+              outline: `2px solid ${tokens.accent}`,
+              outlineOffset: 2,
+            },
           }}
         >
           {body}
