@@ -10,7 +10,7 @@ function Skills() {
         title="Skills & Courses"
         description="Programming languages, AI/ML, DevOps/Cloud, backend and database technologies plus IIT Kanpur coursework."
       />
-      <Typography variant="h2" align="center" sx={{ mb: 4 }}>
+      <Typography variant="h2" component="h1" align="center" sx={{ mb: 4 }}>
         Skills and Courses
       </Typography>
       <Stack spacing={6}>

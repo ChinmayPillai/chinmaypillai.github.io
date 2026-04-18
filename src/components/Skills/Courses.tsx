@@ -33,13 +33,13 @@ export default function Courses() {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12}>
-        <Typography variant="h6" color="text.primary">
+        <Typography variant="h6" component="p" color="text.primary">
           A list of the courses I've completed:
         </Typography>
       </Grid>
       {courseList.map((group) => (
         <Grid key={group.name} item xs={12} md={6}>
-          <Typography variant="h4" color="text.primary" sx={{ mb: 1 }}>
+          <Typography variant="h4" component="h2" color="text.primary" sx={{ mb: 1 }}>
             {group.name}
           </Typography>
           <Box component="ul" sx={{ pl: 3, m: 0, color: "text.primary" }}>

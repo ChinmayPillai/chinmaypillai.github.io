@@ -20,10 +20,10 @@ function Work() {
       />
       <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
         <Grid item xs={isScreenMediumPlus ? 9 : 12}>
-          <Typography variant="h1" sx={{ mb: 1 }}>
+          <Typography variant="h1" component="h1" sx={{ mb: 1 }}>
             Blitz
           </Typography>
-          <Typography variant="h5" color="text.secondary">
+          <Typography variant="h5" component="p" color="text.secondary">
             A tech-driven startup innovating the Indian logistics industry.
           </Typography>
         </Grid>
@@ -33,12 +33,12 @@ function Work() {
           </Grid>
         )}
         <Grid item xs={12}>
-          <Typography variant="h4" color="text.primary">
+          <Typography variant="h4" component="h2" color="text.primary">
             I work on{" "}
             <Typography component="span" variant="inherit" color="primary.main" sx={{ fontWeight: 600 }}>
               {myWork}
             </Typography>
-            <Typography component="span" variant="inherit" sx={{ color: tokens.text.secondary }}>
+            <Typography component="span" variant="inherit" aria-hidden="true" sx={{ color: tokens.text.secondary }}>
               <Cursor />
             </Typography>
           </Typography>

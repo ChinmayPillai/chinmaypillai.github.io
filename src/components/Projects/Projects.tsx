@@ -128,7 +128,7 @@ function Projects() {
             />
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
                 <Grid item xs={12}>
-                    <Typography variant="h2" align="center" sx={{ mb: 2 }}>
+                    <Typography variant="h2" component="h1" align="center" sx={{ mb: 2 }}>
                         Prominent Projects
                     </Typography>
                 </Grid>

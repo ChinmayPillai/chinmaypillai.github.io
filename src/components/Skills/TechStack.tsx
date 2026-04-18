@@ -84,7 +84,7 @@ export default function TechStack() {
     <Grid container spacing={3} sx={{ mt: 1, mb: 2 }}>
       {techData.map((categoryData) => (
         <Grid key={categoryData.category} item xs={12} md={6}>
-          <Typography variant="h5" color="text.primary" sx={{ mb: 2 }}>
+          <Typography variant="h5" component="h2" color="text.primary" sx={{ mb: 2 }}>
             {categoryData.category}
           </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>

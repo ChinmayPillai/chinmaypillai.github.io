@@ -53,13 +53,13 @@ function Home() {
       />
       <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
         <Grid item xs={isScreenMediumPlus ? 9 : 12}>
-          <Typography variant="h4" color="text.secondary" sx={{ mb: 0.5 }}>
+          <Typography variant="h4" component="p" color="text.secondary" sx={{ mb: 0.5 }}>
             Hi, I'm
           </Typography>
-          <Typography variant="h1" sx={{ mb: 1 }}>
+          <Typography variant="h1" component="h1" sx={{ mb: 1 }}>
             Chinmay Pillai
           </Typography>
-          <Typography variant="h4" color="text.primary">
+          <Typography variant="h4" component="p" color="text.primary">
             A{" "}
             <Typography component="span" variant="inherit" color="primary.main" sx={{ fontWeight: 600 }}>
               Developer
@@ -76,12 +76,12 @@ function Home() {
           </Grid>
         )}
         <Grid item xs={12}>
-          <Typography variant="h4" color="text.primary">
+          <Typography variant="h4" component="h2" color="text.primary">
             I love{" "}
             <Typography component="span" variant="inherit" color="primary.main" sx={{ fontWeight: 600 }}>
               {myPassions}
             </Typography>
-            <Typography component="span" variant="inherit" sx={{ color: tokens.text.secondary }}>
+            <Typography component="span" variant="inherit" aria-hidden="true" sx={{ color: tokens.text.secondary }}>
               <Cursor />
             </Typography>
           </Typography>

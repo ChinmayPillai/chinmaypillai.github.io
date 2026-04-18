@@ -19,7 +19,7 @@ function About() {
         description="About Chinmay Pillai — IIT Kanpur graduate, developer, 2× national medalist in speed skating, Rubik's cube enthusiast."
       />
       <Reveal>
-        <Typography variant="h2" align="center" sx={{ mb: 4 }}>
+        <Typography variant="h2" component="h1" align="center" sx={{ mb: 4 }}>
           About Me
         </Typography>
       </Reveal>

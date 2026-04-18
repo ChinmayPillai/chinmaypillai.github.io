@@ -9,7 +9,7 @@ interface DetailProps {
 export default function DetailLayout({ title, bullets }: DetailProps) {
   return (
     <Box>
-      <Typography variant="h4" align="center" sx={{ mb: 3 }}>
+      <Typography variant="h4" component="h2" align="center" sx={{ mb: 3 }}>
         {title}
       </Typography>
       <Box component="ul" sx={{ pl: 3, m: 0, color: "text.primary" }}>
