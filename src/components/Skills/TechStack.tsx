@@ -1,139 +1,105 @@
-import { Typography, Grid } from "@mui/material";
-import { headingStyle, titleStyle } from "../Utilities/colors";
+import { Box, Grid, Typography } from "@mui/material";
+import { tokens } from "../Utilities/colors";
 
-const imgBg = {
-  backgroundColor: headingStyle,
-  padding: 5,
+const iconSx = {
+  width: 60,
+  height: 60,
+  p: 1,
+  borderRadius: 2,
+  backgroundColor: tokens.bg.surface,
+  border: "1px solid",
+  borderColor: tokens.border.subtle,
+  transition: tokens.transition.default,
+  "&:hover": {
+    borderColor: tokens.border.strong,
+    transform: "translateY(-2px)",
+  },
 };
-
-const imgSize = "60";
-
-const textColour = titleStyle;
-
-const headingSize = "h4";
 
 const techData = [
   {
     category: "Programming Languages",
     items: [
-      { src: "techStack/progLang/cpp2.svg", alt: "cplusplus" },
-      // { src: "techStack/progLang/c.svg", alt: "c" },
-      { src: "techStack/progLang/python.svg", alt: "python" },
-      { src: "techStack/progLang/typescript.svg", alt: "typescript" },
-      { src: "techStack/progLang/javascript.svg", alt: "javascript" },
-      { src: "techStack/progLang/go.svg", alt: "go" },
-      { src: "techStack/progLang/solidity.svg", alt: "solidity" },
-      // { src: "techStack/progLang/java.svg", alt: "java" },
-      { src: "techStack/progLang/csharp.svg", alt: "csharp" },
+      { src: "techStack/progLang/cpp2.svg", alt: "C++" },
+      { src: "techStack/progLang/python.svg", alt: "Python" },
+      { src: "techStack/progLang/typescript.svg", alt: "TypeScript" },
+      { src: "techStack/progLang/javascript.svg", alt: "JavaScript" },
+      { src: "techStack/progLang/go.svg", alt: "Go" },
+      { src: "techStack/progLang/solidity.svg", alt: "Solidity" },
+      { src: "techStack/progLang/csharp.svg", alt: "C#" },
     ],
   },
   {
-    category: "AI/ML",
+    category: "AI / ML",
     items: [
-      { src: "techStack/aiMl/tensorflow.svg", alt: "tensorflow" },
-      { src: "techStack/aiMl/pytorch.svg", alt: "pytorch" },
+      { src: "techStack/aiMl/tensorflow.svg", alt: "TensorFlow" },
+      { src: "techStack/aiMl/pytorch.svg", alt: "PyTorch" },
       { src: "techStack/aiMl/pandas.svg", alt: "pandas" },
-      { src: "techStack/aiMl/Scikit_learn.svg", alt: "scikit_learn" },
-      { src: "techStack/aiMl/opencv.svg", alt: "opencv" },
+      { src: "techStack/aiMl/Scikit_learn.svg", alt: "scikit-learn" },
+      { src: "techStack/aiMl/opencv.svg", alt: "OpenCV" },
       { src: "techStack/aiMl/seaborn.svg", alt: "seaborn" },
     ],
   },
   {
     category: "DevOps / Cloud",
     items: [
-      { src: "techStack/devOps/docker.svg", alt: "docker" },
-      { src: "techStack/devOps/aws.svg", alt: "aws" },
-      { src: "techStack/devOps/linux.svg", alt: "linux" },
-      { src: "techStack/devOps/git.svg", alt: "git" },
-      { src: "techStack/devOps/bash.svg", alt: "bash" },
+      { src: "techStack/devOps/docker.svg", alt: "Docker" },
+      { src: "techStack/devOps/aws.svg", alt: "AWS" },
+      { src: "techStack/devOps/linux.svg", alt: "Linux" },
+      { src: "techStack/devOps/git.svg", alt: "Git" },
+      { src: "techStack/devOps/bash.svg", alt: "Bash" },
     ],
   },
   {
-    category: "Backend Development",
+    category: "Backend",
     items: [
-      { src: "techStack/backend/node.svg", alt: "nodejs" },
-      { src: "techStack/backend/express.svg", alt: "express" },
-      { src: "techStack/backend/django.svg", alt: "django" },
-      { src: "techStack/backend/nginx.svg", alt: "nginx" },
-      // { src: "techStack/backend/kafka.svg", alt: "kafka" },
+      { src: "techStack/backend/node.svg", alt: "Node.js" },
+      { src: "techStack/backend/express.svg", alt: "Express" },
+      { src: "techStack/backend/django.svg", alt: "Django" },
+      { src: "techStack/backend/nginx.svg", alt: "NGINX" },
     ],
   },
-  // {
-  //   category: "Frontend Development",
-  //   items: [
-  //     { src: "techStack/frontend/react.svg", alt: "react" },
-  //     { src: "techStack/frontend/nextjs.svg", alt: "nextJs" },
-  //     { src: "techStack/frontend/html.svg", alt: "html5" },
-  //     { src: "techStack/frontend/css.svg", alt: "css3" },
-  //     { src: "techStack/frontend/tailwind.svg", alt: "tailwind" },
-  //     { src: "techStack/frontend/bootstrap.svg", alt: "bootstrap" },
-  //     { src: "techStack/frontend/framer.svg", alt: "framer" },
-  //   ],
-  // },
   {
     category: "Database",
     items: [
-      { src: "techStack/database/postgresql.svg", alt: "postgresql" },
-      { src: "techStack/database/redis.svg", alt: "redis" },
-      { src: "techStack/database/mongodb.svg", alt: "mongodb" },
-      { src: "techStack/database/mysql.svg", alt: "mysql" },
-      { src: "techStack/database/sqlite.svg", alt: "sqlite" },
+      { src: "techStack/database/postgresql.svg", alt: "PostgreSQL" },
+      { src: "techStack/database/redis.svg", alt: "Redis" },
+      { src: "techStack/database/mongodb.svg", alt: "MongoDB" },
+      { src: "techStack/database/mysql.svg", alt: "MySQL" },
+      { src: "techStack/database/sqlite.svg", alt: "SQLite" },
     ],
   },
-  // {
-  //   category: "Frameworks",
-  //   items: [
-  //     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg", alt: "dotnet" },
-  //   ]
-  // },
   {
-    category: "Other Software",
+    category: "Other",
     items: [
-      { src: "techStack/other/matlab.png", alt: "matlab" },
-      { src: "techStack/other/unity.svg", alt: "unity" },
-      { src: "techStack/other/arduino.svg", alt: "arduino" },
-      // { src: "techStack/other/photoshop.svg", alt: "photoshop" },
+      { src: "techStack/other/matlab.png", alt: "MATLAB" },
+      { src: "techStack/other/unity.svg", alt: "Unity" },
+      { src: "techStack/other/arduino.svg", alt: "Arduino" },
     ],
   },
 ];
 
 export default function TechStack() {
   return (
-    <div>
-      {/* <Typography
-        variant="h3"
-        color={headingStyle}
-        style={{ textAlign: "left" }}
-        sx={{ textDecoration: "underline", mb: 2, mt: 5 }}
-      >
-        Tech Stack:
-      </Typography> */}
-
-      <Grid container spacing={2} sx={{ ml: 0.5, mt: 1, mb: 2 }}>
-        {techData.map((categoryData, index) => (
-          <Grid key={index} item xs={12} md={6}>
-            <Typography
-              variant={headingSize}
-              color={textColour}
-              style={{ textAlign: "left" }}
-            >
-              {categoryData.category}
-            </Typography>
-            <p style={{ textAlign: "left" }}>
-              {categoryData.items.map((item, itemIndex) => (
-                <img
-                  key={itemIndex}
-                  style={imgBg}
-                  src={item.src}
-                  alt={item.alt}
-                  width={imgSize}
-                  height={imgSize}
-                />
-              ))}
-            </p>
-          </Grid>
-        ))}
-      </Grid>
-    </div>
+    <Grid container spacing={3} sx={{ mt: 1, mb: 2 }}>
+      {techData.map((categoryData) => (
+        <Grid key={categoryData.category} item xs={12} md={6}>
+          <Typography variant="h5" color="text.primary" sx={{ mb: 2 }}>
+            {categoryData.category}
+          </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+            {categoryData.items.map((item) => (
+              <Box
+                key={item.alt}
+                component="img"
+                sx={iconSx}
+                src={item.src}
+                alt={item.alt}
+              />
+            ))}
+          </Box>
+        </Grid>
+      ))}
+    </Grid>
   );
 }
