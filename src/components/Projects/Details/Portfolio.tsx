@@ -1,26 +1,13 @@
-import { Typography, ThemeProvider } from "@mui/material";
-import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
+import DetailLayout, { Strong } from "../../Utilities/DetailLayout";
 
-export default function Portfolio(){
-    return(
-        <div>
-            <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                Portfolio Website
-            </Typography>
-
-
-            <ThemeProvider theme={projTextTheme}>
-                <Typography variant="h6" align="left" color={textColour}>
-                    <ul>
-                        <li>
-                            Developed and deployed a React and Material UI based portfolio website utilising Hooks and ContextAPI for complex state management
-                        </li>
-                        <li>
-                            Utilised Framer Motion to develop engaging animations
-                        </li>
-                    </ul>
-                </Typography>
-            </ThemeProvider>
-        </div>
-    )
+export default function Portfolio() {
+  return (
+    <DetailLayout
+      title="Portfolio Website"
+      bullets={[
+        <>Developed and deployed a <Strong>React</Strong> and <Strong>Material UI</Strong> portfolio site using Hooks and the Context API for complex state management</>,
+        <>Used <Strong>Framer Motion</Strong> to develop engaging animations</>,
+      ]}
+    />
+  );
 }

@@ -1,33 +1,15 @@
-import { Typography, ThemeProvider } from "@mui/material";
-import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
+import DetailLayout, { Strong } from "../../Utilities/DetailLayout";
 
-export default function Samsung(){
-    return(
-        <div>
-            <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                ML Research Intern, Advanced Research Group - Samsung, Bangalore
-            </Typography>
-
-            <ThemeProvider theme={projTextTheme}>
-                <Typography variant="h6" align="left" color={textColour}>
-                    <ul>
-                        <li>
-                            Developed ML models, analysed, and denoised UWB phasor data to enhance camera auto focus performance
-                        </li>
-                        <li>  
-                            Programmed <strong>C++ Gradient Boost</strong> model with <strong>76.3% f1 score</strong> using <strong>scikit-learn</strong> & <strong>ONNX</strong> for motion classification
-                         </li>
-
-                        <li>
-                            Improved predictive score by exploring & comparing <strong>Attention</strong>-based models, <strong>C-SVMs, GMMs, & Random Forests</strong>
-                        </li>
-                        <li>
-                            Created an <strong>LSTM</strong> motion classifier with <strong>85% f1 score</strong> using <strong>PyTorch</strong> & designed an algorithmic object distance predictor
-                        </li>
-                    </ul>
-                </Typography>
-            </ThemeProvider>
-
-        </div>
-    )
+export default function Samsung() {
+  return (
+    <DetailLayout
+      title="ML Research Intern, Advanced Research Group — Samsung, Bangalore"
+      bullets={[
+        <>Developed ML models, analysed and denoised UWB phasor data to enhance camera auto-focus performance</>,
+        <>Programmed a <Strong>C++ Gradient Boost</Strong> model with <Strong>76.3% F1 score</Strong> using <Strong>scikit-learn</Strong> and <Strong>ONNX</Strong> for motion classification</>,
+        <>Improved predictive score by exploring and comparing <Strong>Attention</Strong>-based models, <Strong>C-SVMs, GMMs, and Random Forests</Strong></>,
+        <>Created an <Strong>LSTM</Strong> motion classifier with <Strong>85% F1 score</Strong> using <Strong>PyTorch</Strong> and designed an algorithmic object distance predictor</>,
+      ]}
+    />
+  );
 }

@@ -1,32 +1,15 @@
-import { Typography, ThemeProvider } from "@mui/material";
-import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
+import DetailLayout, { Strong } from "../../Utilities/DetailLayout";
 
-export default function BlockPe(){
-    return(
-        <div>
-            <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                BlockPe - Cross-Border Contractual Payment System | CS731 (A* Grade)
-            </Typography>
-
-
-            <ThemeProvider theme={projTextTheme}>
-                <Typography variant="h6" align="left" color={textColour}>
-                    <ul>
-                        <li>
-                            Developed a <strong>Blockchain</strong> based <strong>DApp</strong> on <strong>Hyperledger Fabric</strong> with <strong>GoLang chaincode, TypeScript API and ReactJS</strong>
-                        </li>
-                        <li>
-                            Implemented <strong>Smart Contracts</strong> for secure and automated cross-border payments between 2 local or international parties
-                        </li>
-                        <li>
-                            Designed international payments to route through <strong>central and forex banks</strong> with transaction fees and Auto-Tax Deduction
-                        </li>
-                        <li>
-                            Deployed separate chaincodes for each bank and APIs to invoke <strong>cross-chainocde payment</strong> between the different banks
-                        </li>
-                    </ul>
-                </Typography>
-            </ThemeProvider>
-        </div>
-    )
+export default function BlockPe() {
+  return (
+    <DetailLayout
+      title="BlockPe — Cross-Border Contractual Payment System | CS731 (A* Grade)"
+      bullets={[
+        <>Developed a <Strong>Blockchain</Strong>-based <Strong>DApp</Strong> on <Strong>Hyperledger Fabric</Strong> with <Strong>GoLang chaincode, TypeScript API and ReactJS</Strong></>,
+        <>Implemented <Strong>smart contracts</Strong> for secure and automated cross-border payments between two local or international parties</>,
+        <>Designed international payments to route through <Strong>central and forex banks</Strong> with transaction fees and auto tax deduction</>,
+        <>Deployed separate chaincodes for each bank and APIs to invoke <Strong>cross-chaincode payments</Strong> between the different banks</>,
+      ]}
+    />
+  );
 }

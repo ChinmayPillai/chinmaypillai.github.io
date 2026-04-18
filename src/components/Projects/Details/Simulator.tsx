@@ -1,26 +1,13 @@
-import { Typography, ThemeProvider } from "@mui/material";
-import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
+import DetailLayout, { Strong } from "../../Utilities/DetailLayout";
 
-export default function Simulator(){
-    return(
-        <div>
-            <Typography variant="h3" align="center" color={headingStyle} sx={{ mb: 2 }}>
-                Gravity Simulator
-            </Typography>
-
-            <ThemeProvider theme={projTextTheme}>
-                <Typography variant="h6" align="left" color={textColour}>
-                    <ul>
-                        <li>
-                            Programmed a Multi-Body Gravity Simulator in Python and the code to animate its evolution with time
-                        </li>
-                        <li>
-                            Developed an animated Solar System Simulator with 98.26% accuracy in the orbital time periods of planets
-                        </li>
-                    </ul>
-                </Typography>
-            </ThemeProvider>
-
-        </div>
-    )
+export default function Simulator() {
+  return (
+    <DetailLayout
+      title="Gravity Simulator"
+      bullets={[
+        <>Programmed a <Strong>multi-body gravity simulator</Strong> in <Strong>Python</Strong> with code to animate its evolution over time</>,
+        <>Developed an animated <Strong>Solar System Simulator</Strong> with <Strong>98.26% accuracy</Strong> in the orbital time periods of planets</>,
+      ]}
+    />
+  );
 }

@@ -1,31 +1,16 @@
-import { Typography, ThemeProvider } from "@mui/material";
-import { headingStyle, textColour, projTextTheme } from "../../Utilities/colors";
+import DetailLayout, { Strong } from "../../Utilities/DetailLayout";
 
-export default function ACL(){
-    return(
-        <div>
-            <Typography variant="h3" align="center" color={headingStyle}  sx={{ mb: 2 }}>
-                ACL Digtal (ALTEN Group)
-            </Typography>
-
-            <ThemeProvider theme={projTextTheme}>
-                <Typography variant="h6" align="left" color={textColour}>
-                    <ul>
-                        <li>
-                            Programmed Publish-Subscribe <span style={{ fontWeight: 'bold' }}>Client-Server</span> model in <span style={{ fontWeight: 'bold' }}>NodeJS, C++ and C#</span> for CoAP, LwM2M & Matter protocols  
-                        </li>
-                        <li>
-                            Integrated the 3 simulators in a <span style={{ fontWeight: 'bold' }}>MERN</span> stack <span style={{ fontWeight: 'bold' }}>Web Application</span> and optimised the <span style={{ fontWeight: 'bold' }}>React</span> application using lazy loading
-                        </li>
-                        <li>
-                            Created <span style={{ fontWeight: 'bold' }}>Video Conferencing</span> application in <span style={{ fontWeight: 'bold' }}>React</span> which <span style={{ fontWeight: 'bold' }}>processes audio/video</span> data to send to an internal ML API
-                        </li>
-                        <li>
-                            Developed <span style={{ fontWeight: 'bold' }}>3 IoT simulators</span> & a <span style={{ fontWeight: 'bold' }}>Video Conferencing</span> web application for AI Telemedicine to present as PoC for clients
-                        </li> 
-                    </ul>
-                </Typography>
-            </ThemeProvider>
-        </div>
-    )
+// eslint-disable-next-line react-refresh/only-export-components
+export default function ACL() {
+  return (
+    <DetailLayout
+      title="SDE Summer Intern — ACL Digital (ALTEN Group)"
+      bullets={[
+        <>Programmed a Publish-Subscribe <Strong>Client-Server</Strong> model in <Strong>NodeJS, C++ and C#</Strong> for CoAP, LwM2M and Matter protocols</>,
+        <>Integrated three simulators in a <Strong>MERN</Strong> stack <Strong>web application</Strong> and optimised the <Strong>React</Strong> app using lazy loading</>,
+        <>Created a <Strong>video conferencing</Strong> application in <Strong>React</Strong> that <Strong>processes audio/video</Strong> data to send to an internal ML API</>,
+        <>Developed <Strong>3 IoT simulators</Strong> and a <Strong>video conferencing</Strong> web application for AI Telemedicine, presented as PoC for clients</>,
+      ]}
+    />
+  );
 }
