@@ -35,7 +35,7 @@
       default="$(interRegular16)"  value="normal normal 16px Inter, sans-serif"/>
   <Variable name="body.text.color" description="Color"
       type="color"
-      default="#E5E7EB"  value="#E5E7EB"/>
+      default="#DCDFE5"  value="#DCDFE5"/>
 </Group>
 
 <Group description="Backgrounds">
@@ -79,11 +79,11 @@
       default="$(interSemibold36)"  value="600 36px Inter, sans-serif"/>
   <Variable name="blog.title.color" description="Color"
       type="color"
-      default="#F9FAFB"  value="#F9FAFB"/>
+      default="#F1F3F7"  value="#F1F3F7"/>
   <Variable name="header.icons.color"
       description="Background icons color"
       type="color"
-      default="#F9FAFB"  value="#F9FAFB"/>
+      default="#F1F3F7"  value="#F1F3F7"/>
 </Group>
 
 <Group description="Tabs text" selector="div.widget.PageList">
@@ -103,16 +103,16 @@
       default="$(posts.background.color)"  value="#1A2235"/>
   <Variable name="tabs.overflow.color" description="Popup text color"
       type="color"
-      default="$(posts.text.color)"  value="#E5E7EB"/>
+      default="$(posts.text.color)"  value="#DCDFE5"/>
   <Variable name="tabs.overflow.selected.color" description="Popup selected color"
       type="color"
-      default="$(posts.title.color)"  value="#F9FAFB"/>
+      default="$(posts.title.color)"  value="#F1F3F7"/>
 </Group>
 
 <Group description="Posts" selector="div.widget.Blog">
   <Variable name="posts.title.color" description="Post title color"
       type="color"
-      default="#F9FAFB"  value="#F9FAFB"/>
+      default="#F1F3F7"  value="#F1F3F7"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
       default="$(interSemibold22)"  value="600 22px Inter, sans-serif"/>
@@ -124,7 +124,7 @@
       default="$(body.text.font)"  value="normal normal 16px Inter, sans-serif"/>
   <Variable name="posts.text.color" description="Post text color"
       type="color"
-      default="$(body.text.color)"  value="#E5E7EB"/>
+      default="$(body.text.color)"  value="#DCDFE5"/>
   <Variable name="posts.byline.color" description="Post byline color"
       type="color"
       default="#9CA3AF"  value="#9CA3AF"/>
@@ -143,7 +143,7 @@
 <Group description="Search">
   <Variable name="search.input.color" description="Input color"
       type="color"
-      default="$(blog.title.color)"  value="#F9FAFB"/>
+      default="$(blog.title.color)"  value="#F1F3F7"/>
   <Variable name="search.input.font" description="Input font"
       type="font"
       default="$(interRegular16)"  value="400 16px Inter, sans-serif"/>
@@ -159,7 +159,7 @@
       default="$(posts.background.color)"  value="#1A2235"/>
   <Variable name="sharing.text.color" description="Sharing text color"
       type="color"
-      default="$(posts.title.color)"  value="#F9FAFB"/>
+      default="$(posts.title.color)"  value="#F1F3F7"/>
   <Variable name="sharing.icons.color"
       description="Sharing icons color"
       type="color"
@@ -178,11 +178,11 @@
   <Variable name="popularposts.title.color"
       description="Popular post title color"
       type="color"
-      default="$(posts.title.color)"  value="#F9FAFB"/>
+      default="$(posts.title.color)"  value="#F1F3F7"/>
   <Variable name="popularposts.text.color"
       description="Popular post text color"
       type="color"
-      default="$(posts.text.color)"  value="#E5E7EB"/>
+      default="$(posts.text.color)"  value="#DCDFE5"/>
   <Variable name="popularposts.link.color"
       description="Popular post link color"
       type="color"
@@ -224,7 +224,7 @@
   <Variable name="widget.title.color"
       description="Gadget title color"
       type="color"
-      default="#F9FAFB"  value="#F9FAFB"/>
+      default="#F1F3F7"  value="#F1F3F7"/>
   <Variable name="sidebar.icons.color"
       description="Sidebar icons color"
       type="color"
@@ -240,7 +240,7 @@
       default="#9CA3AF"  value="#9CA3AF"/>
   <Variable name="profile.link.color" description="Profile link color"
       type="color"
-      default="$(posts.title.color)"  value="#F9FAFB"/>
+      default="$(posts.title.color)"  value="#F1F3F7"/>
 </Group>
 
 <Group description="Labels" selector=".widget.Label">
@@ -2661,7 +2661,7 @@ margin-left:40px
 .post-body div,
 .post-body span,
 .post-body li {
-  color: #E5E7EB !important;
+  color: #DCDFE5 !important;
 }
 .post-body a,
 .post-body a:visited {
