@@ -226,9 +226,14 @@ function NavBar() {
                   gap: 0.75,
                   color: tokens.text.primary,
                   textDecoration: "none",
+                  borderRadius: 1,
                   transition: tokens.transition.default,
                   "&:hover": { color: tokens.accent },
                   "&:hover svg": { color: tokens.accent },
+                  "&:focus-visible": {
+                    outline: `2px solid ${tokens.accent}`,
+                    outlineOffset: 4,
+                  },
                 }}
               >
                 <Icon sx={{ fontSize: 18, color: tokens.text.secondary }} />
