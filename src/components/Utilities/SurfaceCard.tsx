@@ -66,6 +66,10 @@ export default function SurfaceCard({
           : tokens.shadow.cardHover,
         transform: "translateY(-2px)",
       },
+      "&:active": {
+        transform: "translateY(0) scale(0.985)",
+        transition: "transform 80ms ease-out",
+      },
     }),
   };
 
