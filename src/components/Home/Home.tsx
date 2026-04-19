@@ -39,7 +39,7 @@ const items: Item[] = [
 
 function Home() {
   const [myPassions] = useTypewriter({
-    words: ["Agentic AI.", "DevOps/Cloud Computing.", "Blockchain."],
+    words: ["Agentic AI / Machine Learning.", "DevOps / Cloud Computing.", "System Design."],
     loop: true,
   });
 
@@ -49,7 +49,7 @@ function Home() {
     <Container sx={{ mb: 8, mt: 5, minHeight: "100vh" }}>
       <PageMeta
         title="Chinmay Pillai"
-        description="Portfolio of Chinmay Pillai — developer from IIT Kanpur working on Agentic AI, Cloud, DevOps, and Full-Stack."
+        description="Portfolio of Chinmay Pillai — SDE from IIT Kanpur working on Agentic AI, ML, Cloud, DevOps, and Backend."
       />
       <Grid container spacing={4} sx={{ mb: 4, mt: 1 }}>
         <Grid item xs={isScreenMediumPlus ? 9 : 12}>
@@ -88,15 +88,15 @@ function Home() {
         </Grid>
         <Grid item xs={12}>
           <Typography variant="body1" color="text.primary">
-            I am a curious developer graduate of IIT Kanpur with{" "}
+            I am a curious SDE at Blitz and a graduate of IIT Kanpur. I have worked on{" "}
             <Typography component="strong" sx={{ color: "primary.main", fontWeight: 600 }}>
-              2 years
-            </Typography>{" "}
-            of internship experience in software. I have worked on{" "}
+              Agentic AI, ML Models, DevOps, Cloud Computing
+            </Typography>{", "}
+            Backend Development in{" "}
             <Typography component="strong" sx={{ color: "primary.main", fontWeight: 600 }}>
-              Agentic AI, ML Models, DevOps / Cloud Computing, Full Stack Web Applications, C++ Driver Development
-            </Typography>{" "}
-            and more. I am passionate about having a significant impact while learning and developing skills as much as possible.
+              SpringBoot, FastAPI & Django
+              </Typography>{", "}
+            C++ Driver Development and more. I am passionate about having a significant impact while learning and developing skills as much as possible.
           </Typography>
         </Grid>
       </Grid>
