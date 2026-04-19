@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import type { MouseEvent } from "react";
 import { Outlet, Link as RouterLink, useLocation } from "react-router-dom";
+import PageLoader from "../Utilities/PageLoader";
 import {
   AppBar,
   Toolbar,
@@ -346,7 +347,9 @@ function NavBar() {
         tabIndex={-1}
         sx={{ outline: "none" }}
       >
-        <Outlet />
+        <Suspense fallback={<PageLoader />}>
+          <Outlet />
+        </Suspense>
       </Box>
     </>
   );
