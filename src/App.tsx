@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import NavBar from "./components/NavBar/NavBar";
 import ScrollToTop from "./components/Utilities/ScrollToTop";
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <Analytics />
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
