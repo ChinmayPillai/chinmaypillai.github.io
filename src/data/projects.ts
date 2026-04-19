@@ -5,15 +5,23 @@ import Broker from "../components/Projects/Details/Broker";
 import SpeechDec from "../components/Projects/Details/SpeechDec";
 import Simulator from "../components/Projects/Details/Simulator";
 import Portfolio from "../components/Projects/Details/Portfolio";
+import SelfHost from "../components/Projects/Details/SelfHost";
 
 export const prominentProjects: Project[] = [
   {
     title: "MERN E-Commerce Web Application",
     des: "Full-Stack E-Commerce WebApp using MERN stack with User Authentication & Encryption",
     date: "May-July 2023",
-    hostedLink: "https://ecom.chinmaypillai.com",
+    // hostedLink: "https://ecom.chinmaypillai.com",
     link: "https://github.com/ChinmayPillai/MERN-ECommerce-WebApp",
     img: "/project/MERN.webp",
+  },
+  {
+    title: "Self-Hosting",
+    des: "Self-Hosted LLMs & Stable-Diffusion on Ollama and NginX Server with Cloudflare Tunnels",
+    date: "Mar 2026",
+    // link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
+    img: "/project/self-host.webp",
   },
   {
     title: "BlockPe - Blockchain Contractual Payments",
@@ -29,13 +37,6 @@ export const prominentProjects: Project[] = [
     link: "https://github.com/ChinmayPillai/Real_Estate_Broker_WebApp",
     img: "/project/Broker.webp",
   },
-  {
-    title: "Solar System Simulator",
-    des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
-    date: "Oct-Nov 2022",
-    link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
-    img: "/project/Simulator.webp",
-  },
 ];
 
 export const otherProjects: Project[] = [
@@ -45,6 +46,13 @@ export const otherProjects: Project[] = [
     date: "Oct-Nov 2023",
     link: "https://github.com/ChinmayPillai/Speech-Detection",
     img: "/project/Microphone2.webp",
+  },
+  {
+    title: "Solar System Simulator",
+    des: "Gravity/Coulomb Force Simulator with any number of particles. Solar System Simulator",
+    date: "Oct-Nov 2022",
+    link: "https://github.com/ChinmayPillai/Multi-Particle_Force_Simulator",
+    img: "/project/Simulator.webp",
   },
   {
     title: "React Typescript Portfolio Website",
@@ -99,6 +107,7 @@ export const otherProjects: Project[] = [
 
 export const projectMap: { [key: string]: React.FC } = {
   "MERN E-Commerce Web Application": MERN,
+  "Self-Hosting": SelfHost,
   "Speech Detection ML Model": SpeechDec,
   "Solar System Simulator": Simulator,
   "React Typescript Portfolio Website": Portfolio,
