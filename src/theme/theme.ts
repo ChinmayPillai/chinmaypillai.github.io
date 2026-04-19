@@ -33,8 +33,26 @@ let theme = createTheme({
   typography: {
     fontFamily:
       '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    h1: { fontSize: 56, fontWeight: 600, color: tokens.text.heading, lineHeight: 1.1, letterSpacing: "-0.02em" },
-    h2: { fontSize: 40, fontWeight: 600, color: tokens.text.heading, lineHeight: 1.15, letterSpacing: "-0.015em" },
+    h1: {
+      fontSize: 56,
+      fontWeight: 600,
+      color: tokens.text.heading,
+      lineHeight: 1.1,
+      letterSpacing: "-0.02em",
+      overflowWrap: "anywhere",
+      "@media (max-width:600px)": { fontSize: 44 },
+      "@media (max-width:400px)": { fontSize: 34 },
+    },
+    h2: {
+      fontSize: 40,
+      fontWeight: 600,
+      color: tokens.text.heading,
+      lineHeight: 1.15,
+      letterSpacing: "-0.015em",
+      overflowWrap: "anywhere",
+      "@media (max-width:600px)": { fontSize: 32 },
+      "@media (max-width:400px)": { fontSize: 26 },
+    },
     h3: { fontSize: 28, fontWeight: 600, color: tokens.text.heading, lineHeight: 1.25 },
     h4: { fontSize: 22, fontWeight: 600 },
     h5: { fontSize: 18, fontWeight: 500 },
