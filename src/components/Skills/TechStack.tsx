@@ -6,7 +6,7 @@ const iconSx = {
   height: 60,
   p: 1,
   borderRadius: 2,
-  backgroundColor: tokens.bg.surface,
+  backgroundColor: "#F3F4F6",
   border: "1px solid",
   borderColor: tokens.border.subtle,
   transition: tokens.transition.default,
@@ -20,8 +20,9 @@ const techData = [
   {
     category: "Programming Languages",
     items: [
-      { src: "techStack/progLang/cpp2.svg", alt: "C++" },
       { src: "techStack/progLang/python.svg", alt: "Python" },
+      { src: "techStack/progLang/cpp2.svg", alt: "C++" },
+      { src: "techStack/progLang/java.svg", alt: "Java"},
       { src: "techStack/progLang/typescript.svg", alt: "TypeScript" },
       { src: "techStack/progLang/javascript.svg", alt: "JavaScript" },
       { src: "techStack/progLang/go.svg", alt: "Go" },
@@ -32,8 +33,11 @@ const techData = [
   {
     category: "AI / ML",
     items: [
-      { src: "techStack/aiMl/tensorflow.svg", alt: "TensorFlow" },
+      { src: "techStack/aiMl/langgraph.svg", alt: "LangGraph" },
+      { src: "techStack/aiMl/langchain.svg", alt: "LangChain" },
       { src: "techStack/aiMl/pytorch.svg", alt: "PyTorch" },
+      { src: "techStack/aiMl/tensorflow.svg", alt: "TensorFlow" },
+      { src: "techStack/aiMl/livekit.svg", alt: "LiveKit" },
       { src: "techStack/aiMl/pandas.svg", alt: "pandas" },
       { src: "techStack/aiMl/Scikit_learn.svg", alt: "scikit-learn" },
       { src: "techStack/aiMl/opencv.svg", alt: "OpenCV" },
@@ -45,18 +49,25 @@ const techData = [
     items: [
       { src: "techStack/devOps/docker.svg", alt: "Docker" },
       { src: "techStack/devOps/aws.svg", alt: "AWS" },
+      { src: "techStack/devOps/google-cloud.svg", alt: "Google Cloud" },
+      { src: "techStack/devOps/terraform.svg", alt: "Terraform" },
+      { src: "techStack/devOps/circleci.svg", alt: "CircleCI" },
+      { src: "techStack/devOps/cloudwatch.svg", alt: "CloudWatch" },
       { src: "techStack/devOps/linux.svg", alt: "Linux" },
       { src: "techStack/devOps/git.svg", alt: "Git" },
       { src: "techStack/devOps/bash.svg", alt: "Bash" },
+      { src: "techStack/devOps/ctrlb.svg", alt: "Ctrl B" },
     ],
   },
   {
     category: "Backend",
     items: [
-      { src: "techStack/backend/node.svg", alt: "Node.js" },
-      { src: "techStack/backend/express.svg", alt: "Express" },
+      { src: "techStack/backend/fastapi.svg", alt: "FastAPI" },
+      { src: "techStack/backend/spring.svg", alt: "Spring Boot" },
       { src: "techStack/backend/django.svg", alt: "Django" },
       { src: "techStack/backend/nginx.svg", alt: "NGINX" },
+      { src: "techStack/backend/express.svg", alt: "Express" },
+      { src: "techStack/backend/node.svg", alt: "Node.js" },
     ],
   },
   {
@@ -64,19 +75,27 @@ const techData = [
     items: [
       { src: "techStack/database/postgresql.svg", alt: "PostgreSQL" },
       { src: "techStack/database/redis.svg", alt: "Redis" },
+      { src: "techStack/database/elastic.svg", alt: "Elasticsearch" },
       { src: "techStack/database/mongodb.svg", alt: "MongoDB" },
-      { src: "techStack/database/mysql.svg", alt: "MySQL" },
+      // { src: "techStack/database/mysql.svg", alt: "MySQL" },
       { src: "techStack/database/sqlite.svg", alt: "SQLite" },
     ],
   },
   {
-    category: "Other",
+    category: "Productivity Boosters",
     items: [
-      { src: "techStack/other/matlab.png", alt: "MATLAB" },
-      { src: "techStack/other/unity.svg", alt: "Unity" },
-      { src: "techStack/other/arduino.svg", alt: "Arduino" },
+      { src: "techStack/agents/claudecode.svg", alt: "Claude Code" },
+      // { src: "techStack/agents/cursor.svg", alt: "Cursor" },
     ],
   },
+  // {
+  //   category: "Other",
+  //   items: [
+  //     { src: "techStack/other/matlab.png", alt: "MATLAB" },
+  //     { src: "techStack/other/unity.svg", alt: "Unity" },
+  //     { src: "techStack/other/arduino.svg", alt: "Arduino" },
+  //   ],
+  // },
 ];
 
 export default function TechStack() {
