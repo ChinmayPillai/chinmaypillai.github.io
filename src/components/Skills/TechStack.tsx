@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Tooltip, Typography } from "@mui/material";
 import { tokens } from "../Utilities/colors";
 
 const iconSx = {
@@ -89,13 +89,16 @@ export default function TechStack() {
           </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
             {categoryData.items.map((item) => (
-              <Box
-                key={item.alt}
-                component="img"
-                sx={iconSx}
-                src={item.src}
-                alt={item.alt}
-              />
+              <Tooltip key={item.alt} title={item.alt} arrow placement="top">
+                <Box
+                  component="img"
+                  sx={iconSx}
+                  src={item.src}
+                  alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </Tooltip>
             ))}
           </Box>
         </Grid>
